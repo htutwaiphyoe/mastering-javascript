@@ -395,3 +395,50 @@ x: function name() {
   console.log("ok");
 }
 name();
+
+/*******************
+ *  5.5.3 continue
+ */
+
+// continue; Error continue can be used in loop body
+let data = [1, 2, 3, 4],
+  total = 0;
+for (let i = 0; i < data.length; i++) {
+  if (!data[i]) continue; // Can't proceed with undefined data
+  total += data[i];
+}
+console.log(total);
+
+for (let i of data) {
+  if (i === 2) {
+    continue;
+  }
+  console.log(i);
+}
+/*******************
+ *  5.5.4 return
+ */
+// return 1;
+
+function add(a, b) {
+  return a + b;
+}
+console.log(add(2, []));
+
+function show(a) {
+  if (!a) return -1;
+  console.log(a); // This part is not executed if a is undefined
+}
+console.log(show());
+
+/*******************
+ *  5.5.5 yield
+ */
+// A generator function that yields a range of integers
+function* range(from, to) {
+  for (let i = from; i <= to; i++) {
+    yield i;
+  }
+}
+
+range(0, 10);
