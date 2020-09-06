@@ -569,6 +569,7 @@ function show6() {
 
 show6();
 
+// This is for loop
 function show7() {
   for (let i = 0; i < 5; i++) {
     try {
