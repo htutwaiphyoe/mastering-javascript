@@ -1,3 +1,3 @@
 /*****************************
- * 5.5.6 throw
+ * 5.6 Miscellaneous Statements
  */
