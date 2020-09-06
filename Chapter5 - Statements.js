@@ -585,7 +585,6 @@ function show7() {
 
 show7();
 
-
 // Bare Catch Clause
 function show8() {
   try {
