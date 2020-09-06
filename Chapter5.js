@@ -551,6 +551,7 @@ function show5() {
 
 show5();
 
+// This While behaves differently than it does in the for loop
 function show6() {
   let i = 0;
   while (i < 5) {
