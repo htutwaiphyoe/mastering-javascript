@@ -629,7 +629,7 @@ person2.address.value = "";
 person2.email.value = "";
 console.log(person2);
 
-/*****************************
+/**********************************
  * 5.6.2 debugger
  */
 
