@@ -665,3 +665,20 @@ function notStrict() {
 }
 
 console.log(notStrict());
+b = 0; // declare in global object
+console.log(b);
+
+("use strict");
+b2 = 1; // b2 not defined
+console.log(b2);
+
+function a(a, b) {
+  console.log(arguments);
+}
+a(1, 2);
+
+function a2(a, b) {
+  "use strict";
+  console.log(arguments);
+}
+a2(1, 2);

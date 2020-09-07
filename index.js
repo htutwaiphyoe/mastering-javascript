@@ -1,3 +1,3 @@
 /*****************************
- * 5.6 Miscellaneous Statements
+ * 5.7 Declarations
  */
