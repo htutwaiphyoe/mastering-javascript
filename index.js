@@ -30,3 +30,15 @@ person2.name.value = "";
 person2.address.value = "";
 person2.email.value = "";
 console.log(person2);
+
+/*****************************
+ * 5.6.2 debugger
+ */
+
+function f(o) {
+  if (o === undefined) debugger;
+  // Temporary line for debugging purposes
+  else console.log(o);
+}
+
+// f(); this will open browser debugger
