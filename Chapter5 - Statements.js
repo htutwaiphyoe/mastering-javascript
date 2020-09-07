@@ -682,3 +682,7 @@ function a2(a, b) {
   console.log(arguments); // arguments is static copy
 }
 a2(1, 2);
+
+/*****************************
+ * 5.7 Declarations
+ */
