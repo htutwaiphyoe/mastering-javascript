@@ -640,3 +640,28 @@ function f(o) {
 }
 
 // f(); this will open browser debugger
+
+/*****************************
+ * 5.6.3 use strict
+ */
+
+function strict2c() {
+  "use strict";
+  let a = { b: 1, b: 2, b: 3 };
+  return a;
+}
+console.log(strict2c());
+function strict() {
+  // Function-level strict mode syntax
+  "use strict";
+  function nested() {
+    return "And so am I!";
+  }
+  return "Hi!  I'm a strict mode function!  " + nested();
+}
+console.log(strict());
+function notStrict() {
+  return "I'm not strict.";
+}
+
+console.log(notStrict());
