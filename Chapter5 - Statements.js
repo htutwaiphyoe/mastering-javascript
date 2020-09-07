@@ -679,6 +679,6 @@ a(1, 2);
 
 function a2(a, b) {
   "use strict";
-  console.log(arguments);
+  console.log(arguments); // arguments is static copy
 }
 a2(1, 2);
