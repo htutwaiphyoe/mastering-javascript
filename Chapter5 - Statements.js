@@ -673,7 +673,7 @@ b2 = 1; // b2 not defined
 console.log(b2);
 
 function a(a, b) {
-  console.log(arguments);
+  console.log(arguments); // arguments is normal
 }
 a(1, 2);
 
