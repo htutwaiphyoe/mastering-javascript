@@ -23,6 +23,20 @@ function area(radius) {
  * 5.7.3 class
  */
 
+class Circle {
+  constructor(radius) {
+    this.r = radius;
+  }
+  area() {
+    return Math.PI * this.r * this.r;
+  }
+  circumference() {
+    return 2 * Math.PI * this.r;
+  }
+}
+const circle = new Circle(10);
+console.log(circle.area());
+console.log(circle.circumference());
 /*****************************
  * 5.7.4 import and export
  */
