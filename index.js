@@ -17,6 +17,8 @@ console.log(area(10)); // HOISTED
 function area(radius) {
   return Math.PI * radius * radius;
 }
+
+// There also are generator functions and asynchronous functions
 /*****************************
  * 5.7.3 class
  */
