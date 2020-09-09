@@ -48,3 +48,6 @@ let r = new Map(); // Create a Map object for key/value mapp
 /************************************
  * 6.2.3 Prototypes
  */
+
+let arr = new Array(); // this object inherits from Array.prototype and Object.prototype called prototype chain
+console.log(arr);
