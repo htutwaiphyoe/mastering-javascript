@@ -62,7 +62,7 @@ console.log(o1.x + o1.y); // => 3
 
 let o2 = Object.create(null); // o2 inherits no props or methods.
 console.log(o2);
-
+// console.log(o2 + "12"); error this object no toString() mehtod
 let o3 = Object.create(Object.prototype); // o3 is like {} or new Object().
 console.log(o3);
 
