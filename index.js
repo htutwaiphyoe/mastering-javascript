@@ -82,3 +82,26 @@ c.r = 2; // c overrides its inherited property
 console.log(unitcircle.r); // => 1: the prototype is not affected
 unitcircle.r = 3;
 console.log(unitcircle.r, c.r);
+
+/************************************
+ * 6.3.3 Property Access Errors
+ */
+
+let obj = {};
+console.log(obj.x);
+// console.log(obj.x.length); Error
+let l;
+if (obj) {
+  if (obj.x) {
+    l = obj.x.length;
+  }
+}
+console.log(l);
+
+l = obj && obj.x && obj.x.length;
+console.log(l);
+
+l = obj?.x?.length;
+console.log(l);
+
+// obj.x.k = 1; Error
