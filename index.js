@@ -1,3 +1,3 @@
 /************************************
- * 6.3 Querying and Setting Properties
+ * 6.4 Deleting Properties
  */
