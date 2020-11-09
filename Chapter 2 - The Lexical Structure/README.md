@@ -2,7 +2,7 @@
 # Lexical Structure
 
 Lexical Structure ဆိုတာက prgramming language တစ်ခုအတွက် သတ်မှတ်ထားတဲ့ အခြေခံစည်းမျဉ်းတွေ ဖြစ်ပါတယ်။ lowest-level syntax ဖြစ်ပြီးတော့ program ကို ဘယ်လိုရေး
-ရမယ်၊ variable နာမည်ကိုဘယ်လိုပေးရမယ်စသော ရေးထုံးတွေကို ပြောတာြဖစ်ပါတယ်
+ရမယ်၊ variable နာမည်ကိုဘယ်လိုပေးရမယ်စသော ရေးထုံးတွေကို ပြောတာဖြစ်ပါတယ်
 
 ## 2.1 The Text of a JavaScript Program
 
