@@ -17,12 +17,12 @@ JavaScript ဟာ whitespace တွေကို ignore လုပ်ပါတယ�
 JavaScript မှာ comment တွေကို style နှစ်မျိုးနဲ့ရေးလို့ရပါတယ်။ single line အတွက် //, multiple line အတွက်  /* */ ကိုအသုံးပြုရမှာပါ။
 
 eg. 
-<!-- // This is a single-line comment.
+// This is a single-line comment.
     
-/* This is multiple-line 
-   comment */ -->
+/* This is multiple-line<br>
+   comment */
 
-<!-- /*
- *This is also multiple-line comment
- *This is called Docs Comment
- */ -->
+/*<br>
+ *This is also multiple-line comment<br>
+ *This is called Docs Comment<br>
+ */
