@@ -4,6 +4,7 @@
  * 2.1 The Text of a JavaScript Program
  */
 
+
 /*****************************************
  * 2.2 Comments
  */
