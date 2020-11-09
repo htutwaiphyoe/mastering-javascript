@@ -19,10 +19,10 @@ JavaScript မှာ comment တွေကို style နှစ်မျို�
 eg. 
 // This is a single-line comment.
     
-/* This is multiple-line<br>
+/* This is multiple-line\
    comment */
 
-/*<br>
- *This is also multiple-line comment<br>
- *This is called Docs Comment<br>
+/*\
+ *This is also multiple-line comment\
+ *This is called Docs Comment\
  */
