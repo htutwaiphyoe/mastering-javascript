@@ -32,4 +32,11 @@ eg.
 Literal ဆိုတာကတော့ program မှာ တိုက်ရိုက်ရေးတဲ့ data value တွေကို ပြောတာဖြစ်ပါတယ်။
 eg. "Hello, World!", 1.2, true, null
 
+## 2.4 Identifiers and Reserved Words
 
+Identifiers ဆိုတာကတော့ variable, function, class စသည်တို့ကို ကြေညာတဲ့အခါမှာ ပေးတဲ့နာမည်တွေကို ဆိုလိုပါတယ်။ 
+indentifier(name) ပေးတဲ့အခါမှာ သတ်မှတ်ထားတဲ့ rules တွေရှိပါတယ်။ 
+- နာမည်တွေဟာ letter(a,b,c,...), underscore(_), dollar sign($) နဲ့ပဲ စရပါမယ်။
+- နောက်က characters တွေကတော့ digits, letters, underscores, dollar signs တွေဖြစ်နိုင်ပါတယ်။
+- ဂဏန်းနဲ့ စလို့မရပါဘူး
+eg. i, number1, user_name, _id, $name
