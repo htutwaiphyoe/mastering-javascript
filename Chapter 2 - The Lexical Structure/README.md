@@ -26,3 +26,10 @@ eg.
  *This is also multiple-line comment\
  *This is called Docs Comment\
  */
+
+## 2.3 Literals
+
+Literal ဆိုတာကတော့ program မှာ တိုက်ရိုက်ရေးတဲ့ data value တွေကို ပြောတာဖြစ်ပါတယ်။
+eg. "Hello, World!", 1.2, true, null
+
+
