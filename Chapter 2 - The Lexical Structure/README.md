@@ -45,7 +45,8 @@ eg. i, number1, user_name, _id, $name
 ## 2.4.1 Reserved Words
 
 Reserved words ဆိုတာသည် language ကနေ အသုံးပြုထားတဲ့ identifers တွေကိုပြောတာဖြစ်ပါတယ်။ အများအားဖြင့်
-သူတို့ကို variable, function နာမည်တွေအဖြစ်ပေးလို့မရပါဘူး။ သို့သော် တချို့သော keywords တွေကို program ရဲ့ syntax ကိုလိုက်ပြီး identifier အဖြစ်အသုံးပြုလို့ရတဲ့နေရာတွေရှိပါတယ်။ eg. let ဆိုတဲ့ keyword ကို variable name အဖြစ် var keyword နဲ့ သုံးတာမျိုးပါ။ တစ်ချို့နာမည်တွေကို languageရဲ့ furture version အတွက် ကြိုပြီး reserve လုပ်ထားတာမျိုးလည်းရှိပါတယ်။ eg. enum, implements. အကောင်းဆုံးကတော့ langauage keyword တွေကို  identifier တွေအဖြစ်သုံးတာမျိုးကို ရှောင်တာပါပဲ။ safe အဖြစ်ဆုံး ဖြစ်တာပေါ့။ keywords တွေကတော့
+သူတို့ကို variable, function နာမည်တွေအဖြစ်ပေးလို့မရပါဘူး။ သို့သော် တချို့သော keywords တွေကို program ရဲ့ syntax ကိုလိုက်ပြီး identifier အဖြစ်အသုံးပြုလို့ရတဲ့နေရာတွေရှိပါတယ်။ eg. let ဆိုတဲ့ keyword ကို variable name အဖြစ် var keyword နဲ့ သုံးတာမျိုးပါ။ တစ်ချို့နာမည်တွေကို languageရဲ့ furture version အတွက် ကြိုပြီး reserve လုပ်ထားတာမျိုးလည်းရှိပါတယ်။ eg. enum, implements. အကောင်းဆုံးကတော့ langauage keyword တွေကို  identifier တွေအဖြစ်သုံးတာမျိုးကို ရှောင်တာပါပဲ။\
+keywords တွေကတော့\
 as const export get null target void\
 async continue extends if of this while\
 await debugger false import return throw with\
