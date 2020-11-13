@@ -46,8 +46,18 @@ Reserved words ဆိုတာသည် language ကနေ အသုံးပြ
 သူတို့ကို variable, function နာမည်တွေအဖြစ်ပေးလို့မရပါဘူး။ သို့သော် တချို့သော keywords တွေကို program ရဲ့ syntax ကိုလိုက်ပြီး identifier အဖြစ်အသုံးပြုလို့ရတဲ့နေရာတွေရှိပါတယ်။ eg. let ဆိုတဲ့ keyword ကို variable name အဖြစ် var keyword နဲ့ သုံးတာမျိုးပါ။ တစ်ချို့နာမည်တွေကို languageရဲ့ furture version အတွက် ကြိုပြီး reserve လုပ်ထားတာမျိုးလည်းရှိပါတယ်။ eg. enum, implements. အကောင်းဆုံးကတော့ langauage keyword တွေကို identifier တွေအဖြစ်သုံးတာမျိုးကို ရှောင်တာပါပဲ။ set, from, target တို့ကိုတော့ သုံးလို့ရပါတယ်။
 keywords တွေကတော့ as, const, export, get, null, target, void, async, continue, extends, if, of, this, while, await, debugger, false, import, return, throw, with, break, default, finally, in, set, true, yield, case, delete, for, instanceof, static, try, catch, do, from, let, super, typeof, class, else, function, new, switch, var, enum, implements, interface, package, private, protected, public, arguments, eval စသည်တို့ဖြစ်ပါတယ်။
 
-## Unicode
+## 2.5 Unicode
 
-JavaScript Program တွေသည် Unicode character set ကိုအသုံးပြုပါတယ်။ Any Unicode Character ကို program မှာရေးနိုင်တယ်။ ဒါပေမယ့် programming convention အရ portability နဲ့ ease of editing ဖြစ်အောင် ASCII Character တွေနဲ့ digits တွေကိုပဲ identifier တွေမှာသုံးပါတယ်။ language ကတော့ letters, digit, ideograph, non-english words, mathematical symbols တွေကို ခွင့်ပြုထားပါတယ်။\
-eg. const π = 3.14; const sí = true; const နာမည် = "ထွဋ်ဝေဖြိုး"
-JavaScript file က code ကိုကြည့်ပါ။
+JavaScript Program တွေသည် Unicode character set ကိုအသုံးပြုပါတယ်။ Any Unicode Character ကို program မှာရေးနိုင်တယ်။ ဒါပေမယ့် programming convention အရ portability နဲ့ ease of editing ဖြစ်အောင် ASCII Character တွေနဲ့ digits တွေကိုပဲ identifier တွေမှာသုံးပါတယ်။ language ကတော့ letters, digit, ideograph, non-english words, mathematical symbols တွေကို ခွင့်ပြုထားပါတယ်။ identifier တွေမှာတော့ emoji ကိုတော့ခွင့်မပြုထားပါဘူး။\
+eg. const π = 3.14; const sí = true; const နာမည် = "ထွဋ်ဝေဖြိုး";\
+***JavaScript file က code ကိုကြည့်ပါ။***
+
+## 2.5.1 Unicode Escape Sequences
+
+အချို့ hardware နဲ့ software တွေဟာ Unicode character တွေကို မှန်ကန်အောင် မဖော်ပြနိုင်သလို process လည်းမလုပ်နိုင်ပါဘူး။ အဲ့လို old technology တွေသုံးထားတဲ့ system တွေအတွက် JavaScript က unicode escape sequence ကိုပြုလုပ်ပေးထားပါတယ်။ escape sequence ဆိုတာက unicode character တွေကို direct မရေးဘဲ ASCII character တွေသုံးပြီးရေးတာပါ။ ရေးမယ်ဆိုရင် **\u** နဲ့ စပြီး နောက်က **hexadecimal value** တွေလိုက်ပါတယ်။ သူတို့ကို string literal, regualar expression, identifers တွေမှာ သုံးလို့ရပါတယ်။ eg. é = \u00E9.\
+ရေးတဲ့အခါ သုံးမျိုးနဲ့ရေးနိုင်တယ်။
+- é  //  Unicode character
+- \u00e9 //  An escape sequence
+- \u{E9} //  another form of the same escape sequence
+old version မှာတော့ 4-digit escape sequence ကိုပဲရေးလို့ရပြီး curly brace syntax ကို ES6 မှသာ emoji လိုမျိုး 16 bit unicode codepoint ထက်ပိုတဲ့ character တွေအတွက် ထုတ်ခဲ့တာပါ။\
+***JavaScript file က code ကိုကြည့်ပါ။***
