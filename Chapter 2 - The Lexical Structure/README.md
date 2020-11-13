@@ -58,6 +58,11 @@ eg. const π = 3.14; const sí = true; const နာမည် = "ထွဋ်ဝ�
 ရေးတဲ့အခါ သုံးမျိုးနဲ့ရေးနိုင်တယ်။
 - é  //  Unicode character
 - \u00e9 //  An escape sequence
-- \u{E9} //  another form of the same escape sequence
+- \u{E9} //  another form of the same escape sequence\
 old version မှာတော့ 4-digit escape sequence ကိုပဲရေးလို့ရပြီး curly brace syntax ကို ES6 မှသာ emoji လိုမျိုး 16 bit unicode codepoint ထက်ပိုတဲ့ character တွေအတွက် ထုတ်ခဲ့တာပါ။\
+***JavaScript file က code ကိုကြည့်ပါ။***
+
+## 2.5.2 Unicode Normalization
+
+Non-ASCII characters တွေအတွက် unicode encoding သည် တစ်မျိုးထက်ပိုတာတွေရှိပါတယ်။ eg **"é"** ဆိုတဲ့ character ကို encode ရင် **\u00E9** နဲ့လည်းရသလို noraml charcter **"e"** ကို **"\0301"** နဲ့ပေါင်းရေးရင်လည်းရပါတယ်။ နှစ်မျိုးလုံးက text editor မှာဖော်ပြတာတူပေမယ့် binary encoding အရမတူတဲ့အတွက် program ကို confuse ဖြစ်စေပါတယ်။ အဲ့လို ဒွိဟ မဖြစ်အောင် unicode normalization လုပ်ပေးရပါတယ်။ Unicode Standard မှာတော့ character တိုင်းအတွက် encoding နဲ့ normalization procedure အတွက် သတ်မှတ်ပေးထားပါတယ်။ အကယ်၍ source code က normalization လုပ်ထားတယ်လို့ JavaScript Interpreter ကယူဆထားရင် normalization ကိုမလုပ်တော့ဘဲ run သွားနိုင်ပါတယ်။ အဲ့ဒါကြောင့် unicode character တွေသုံးမယ်ဆိုရင် editor, tool တွေမှာ source codeကို unicode normalization လုပ်ထားပါ။ 
 ***JavaScript file က code ကိုကြည့်ပါ။***
