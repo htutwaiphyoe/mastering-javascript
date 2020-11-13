@@ -53,3 +53,54 @@ café // => 2: this indistinguishable constant has a different value
 /*****************************************
  * 2.6 Optional Semicolons
  */
+
+ // semicolon can be omitted
+ a = 3
+ b = 4
+
+ // semicolon must be added
+ a = 3; b = 4;
+
+// continuation of statement 1
+let a
+a
+=
+3
+console.log(a)
+let a; a = 3; console.log(a); // interpreted
+
+// continuation of statement 2
+
+let y = x + f
+(a+b).toString()
+
+let y = x + f(a + b).toString(); // interpreted
+
+// defensive semicolon
+
+let x = 0 // Semicolon omitted here
+;[x,x+1,x+2].forEach(console.log) // Defensive ; keeps this statement separate
+
+// three exceptions
+
+// written
+return
+true;
+
+// interpreted
+return; true;
+
+// excepted
+return true;
+
+// written
+x
+++
+y
+
+// interpreted
+x; ++y;
+
+// excepted
+x++; y;
+
