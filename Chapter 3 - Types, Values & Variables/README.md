@@ -36,4 +36,15 @@ value တွေကို Constant, variable အဖြစ် သိမ်းန�
 
 ## 3.2 Numbers
 
-Number type သည် primitive type ဖြစ်ပြီး numbers တွေကို ဖော်ပြဖို့သုံးတယ်။ JavaScript သည် numbers တွေကို ဖော်ပြတဲ့အခါ 64-bit floating point format IEEE 754 standard ကိုသုံးတယ်။ 2^-53 - 2^53 range ရှိတဲ့ integers တွေကို အတိအကျဖော်ပြနိုင်ပြီး အဲ့rangeထက်ကျော်ရင်တော့ trailing digit lost ကြောင့် အတိအကျမရတော့ပါဘူး။ large integers တွေအတွက် type သတ်သတ်ရှိပါတယ်။ Array indexing လို operation တွေမှာတော့ 32-bit integers ကိုသုံးပါတယ်။ number တွေကို program မှာ direct ရေးရင် numeric literal လို့ခေါ် ပြီး negative value ရေးချင်ရင် - sign သုံးရမှာပါ။   
+Number type သည် primitive type ဖြစ်ပြီး numbers တွေကို ဖော်ပြဖို့သုံးတယ်။ JavaScript သည် numbers တွေကို ဖော်ပြတဲ့အခါ 64-bit floating point format IEEE 754 standard ကိုသုံးတယ်။ 2^-53 - 2^53 range ရှိတဲ့ integers တွေကို အတိအကျဖော်ပြနိုင်ပြီး အဲ့rangeထက်ကျော်ရင်တော့ trailing digit lost ကြောင့် အတိအကျမရတော့ပါဘူး။ large integers တွေအတွက် type သတ်သတ်ရှိပါတယ်။ Array indexing လို operation တွေမှာတော့ 32-bit integers ကိုသုံးပါတယ်။ number တွေကို program မှာ direct ရေးရင် numeric literal လို့ခေါ် ပြီး negative value ရေးချင်ရင် - sign သုံးရမှာပါ။
+
+## 3.2.1 Integer Literals
+
+Integer literals ကို JavaScript မှာ 4 မျိုးရေးနိုင်ပါတယ်။
+
+- base 10 (decimal)
+- base 16 (hexadecimal)
+- base 2 (binary)
+- base 8 (octal)
+  eg. 255 , 0xff , 0b11111111 , 0o377\
+***JS file က နမူနာ code ကိုကြည့်ပါ***
