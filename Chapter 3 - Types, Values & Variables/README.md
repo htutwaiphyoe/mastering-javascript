@@ -45,6 +45,17 @@ Integer literals ကို JavaScript မှာ 4 မျိုးရေးနိ
 - base 10 (decimal)
 - base 16 (hexadecimal)
 - base 2 (binary)
-- base 8 (octal)
+- base 8 (octal)\
   eg. 255 , 0xff , 0b11111111 , 0o377\
+***JS file က နမူနာ code ကိုကြည့်ပါ***
+
+## 3.2.2 Floating-Point Literals
+
+Floating Points Literals ဆိုတာက ဒဿမကိန်း ပါတဲ့ number တွေကို ပြောတာပါ။ သူ့ကိုရေးတဲ့အခါ ပုံစံနှစ်မျိုးရှိပါတယ်။
+- traditional syntax
+- exponential notation\
+eg. 3.14, 6.02e23
+
+JavaScrpt မှာ number တွေရေးတဲ့အခါ separator သုံးချင်ရင် underscore (_) နဲ့ရေးနိုင်ပါတယ်။၏
+eg. 1_000_000.000_000\
 ***JS file က နမူနာ code ကိုကြည့်ပါ***

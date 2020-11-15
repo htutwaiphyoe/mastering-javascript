@@ -1,10 +1,22 @@
 /************************************************
     3.2.1 Integer Literals
 ************************************************/
-console.log(255); // 255
-console.log(0xff); // 255
-console.log(0b11111111); // 255
-console.log(0o377); // 255
+console.log(255); // 255 (2*100 + 5*10 + 5*1)
+console.log(0xff); // 255 (15*16 + 15)
+console.log(0b11111111); // 255 (1*128 + 1*64 + 1*32 + 1*16 + 1*8 + 1*4 + 1*2 + 1*1)
+console.log(0o377); // 255 (3*64 + 7*8 + 7*1)
+
+/************************************************
+    3.2.2 Floating-Point Literals
+************************************************/
+console.log(3.14);
+console.log(6.02e23);
+console.log(1.45e-2);
+
+let billion = 1_000_000_000; // Underscore as a thousands separator.
+let bytes = 0x89_AB_CD_EF; // As a bytes separator.
+let bits = 0b0001_1101_0111; // As a nibble separator.
+let fraction = 0.123_456_789; // Works in the fractional part, too.
 
 // /************************************************
 //     Binary Floating Points & Rounding Errors
