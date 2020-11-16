@@ -59,3 +59,18 @@ eg. 3.14, 6.02e23
 JavaScrpt မှာ number တွေရေးတဲ့အခါ separator သုံးချင်ရင် underscore (_) နဲ့ရေးနိုင်ပါတယ်။၏
 eg. 1_000_000.000_000\
 ***JS file က နမူနာ code ကိုကြည့်ပါ***
+
+## 3.2.3 Arithmetic in JavaScript
+
+JavaScript မှာ Number တွေကို Arithmetic Operator တွေနဲ့ တွဲပြီး အလုပ်လုပ်ပါတယ်။ +, -, *, /, %, ** ဆိုတဲ့ Operators တွေအပြင် Complex mathematical operation တွေလုပ်နိုင်ဖို့ **Math** ဆိုတဲ့ Global Object တစ်ခုထည့်ပေးထားပါတယ်။\
+eg. Math.floor(12)
+
+JavaScript မှာ arithematic operation တွေလုပ်တဲ့အခါ overflow, underflow, division by zero ဆိုတဲ့ error မျိုးတွေမပြပါဘူး။ overflow ဆိုတာသည် numeric operation တစ်ခုရဲ့ result က language က ဖော်ပြနိုင်တဲ့ အကြီးဆုံး value ထက်ကြီးတဲ့အခါဖြစ်ပါတယ်။ အဲ့လိုဆိုရင် Infinity ဆိုတဲ့ result ကိုပေးပါတယ်။ ထို့နည်းတူ result က negative value ဖြစ်ပြီး  အကြီးဆုံး negative value ထက်ကြီးနေရင် -Infinity ရမှာပါ။ သူတို့ကို arithematic လုပ်ရင် infinite value ပဲရပါလိမ့်မယ်။ 
+
+underflow ဆိုတာသည် numeric operation ရဲ့ result ကlanguage ရဲ့ smallest number ထက်ပိုပြီး zero နားကို ကပ်နေတာကိုပြောတာပါ။ အဲ့ချိန်မှာ JS သည် 0 ကို return ပေးပါတယ်။ negative result ဆိုရင် -0 (negative zero) ကိုပေးပါတယ်။ 
+
+Divison by zero ဆိုရင်တော့ Infinity သို့မဟုတ် -Infinity ပေးပါတယ်။ သို့ပေမယ့် zero divided by zero, infinity divided by infinity, square root of negative number, arithematic operation with non-numeric value ဆိုရင်တော့ NaN (Not a Number) ကိုရပါတယ်။
+
+NaN ကို သူကိုယ်တိုင်နဲ့ရော အခြား value တွေနဲ့ရော compare လုပ်လို့မရဘူး။ value တစ်ခုကို NaN ဟုတ်မဟုတ် စစ်ချင်ရင် x === NaN လို့စစ်လို့မရဘူး။ x != x or Number.isNaN(x) ဆိုပြီးစစ်ရပါမယ်။ Number.isNaN() သည် value က NaN ဖြစ်မှ true ပေးတာပါ။ Global function isNaN() ကတော့ value သည် NaN or non-numeric value ဆိုရင် true ပေးပါတယ်။ အလားတူ Number.isFinite() သည် value က number ဖြစ်မှ true ပေးတာဖြစ်ပြီး Global function isFinite() ကတော့ value က number နဲ့ number အဖြစ် convert လို့ရရင် true ပေးပါတယ်။ 
+
+0 နဲ့ -0 သည် တူညီလုနီးပါးရှိပါတယ်။ သူတို့ကို compare ရင် true ပါ။  divisor အနေနဲ့သုံးရင်တော့ မညီပါဘူး။
