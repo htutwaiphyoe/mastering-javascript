@@ -73,4 +73,11 @@ Divison by zero ဆိုရင်တော့ Infinity သို့မဟုတ
 
 NaN ကို သူကိုယ်တိုင်နဲ့ရော အခြား value တွေနဲ့ရော compare လုပ်လို့မရဘူး။ value တစ်ခုကို NaN ဟုတ်မဟုတ် စစ်ချင်ရင် x === NaN လို့စစ်လို့မရဘူး။ x != x or Number.isNaN(x) ဆိုပြီးစစ်ရပါမယ်။ Number.isNaN() သည် value က NaN ဖြစ်မှ true ပေးတာပါ။ Global function isNaN() ကတော့ value သည် NaN or non-numeric value ဆိုရင် true ပေးပါတယ်။ အလားတူ Number.isFinite() သည် value က number ဖြစ်မှ true ပေးတာဖြစ်ပြီး Global function isFinite() ကတော့ value က number နဲ့ number အဖြစ် convert လို့ရရင် true ပေးပါတယ်။ 
 
-0 နဲ့ -0 သည် တူညီလုနီးပါးရှိပါတယ်။ သူတို့ကို compare ရင် true ပါ။  divisor အနေနဲ့သုံးရင်တော့ မညီပါဘူး။
+0 နဲ့ -0 သည် တူညီလုနီးပါးရှိပါတယ်။ သူတို့ကို compare ရင် true ပါ။  divisor အနေနဲ့သုံးရင်တော့ မညီပါဘူး။\
+***JS file က နမူနာ code ကိုကြည့်ပါ***
+
+## 3.2.4 Binary Floating-Point and Rounding Errors
+
+JavaScript သည် real number တွေကို ဖော်ပြတဲ့အခါ actual value အစား approximate value ကိုပဲ ဖော်ပြတာမျိုးရှိတယ်။ JavaScript သုံးတဲ့ IEEE-754 floating-point format သည် binary representation ဖြစ်တယ်။  binary ဖြစ်တဲ့အတွက် ဂဏန်းတွေကို 2 power တွေနဲ့အလုပ်လုပ်ပါတယ်။ eg. 1 = 2 ^ 0, 128 = 2^7
+floating-pointတွေကို တော့ fraction တွေနဲ့ ဖော်ပြပါတယ်။ eg. 2^ -1 = 1/2, 2^ -3 = 1/8, 2^ -10 = 1/1024. binary fraction တွေရဲ့ အားနည်းချက်က ဒဿမကိန်းတွေကို ဖော်ပြတဲ့အခါ decimal fraction 1/10 တို့လို အတိအကျမ‌ဖော်ပြနိုင်ဘူး။ 0.5 ဆိုရင် 1/2 ဆိုတဲ့ fraction ရှိပေမယ့် 0.1 အတွက် တိကျတဲ့ fraction မရှိလို့ နီးစပ်ရာ fraction တွေကိုပေါင်းပြီး actual value နီးပါး precision ဖြစ်အောင်လုပ်ရပါတယ်။ eg. 0.1 = 1/16 + 1/32 + ... ။ အဲ့ဒါကြောင့် rounding error ဆိုတာပေါ်လာတယ်။ အဲ့လို problem တွေသည် binary floating-point သုံးတဲ့ language တွေမှာ ဖြစ်လေ့ရှိတယ်။ eg. 0.1 + 0.2 =  0.30000000000000004\
+***JS file က နမူနာ code ကိုကြည့်ပါ***

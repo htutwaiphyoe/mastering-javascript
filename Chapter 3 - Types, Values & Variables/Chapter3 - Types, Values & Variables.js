@@ -73,32 +73,32 @@ console.log(Infinity / Infinity); // NaN
 console.log(Math.sqrt(-2)); // NaN
 console.log(2 * "Ok"); // NaN
 
-Infinity // A positive number too big to represent
-Number.POSITIVE_INFINITY // Same value
-1/0 // => Infinity
-Number.MAX_VALUE * 2 // => Infinity; overflow
--Infinity // A negative number too big to represent
-Number.NEGATIVE_INFINITY // The same value
--1/0 // => -Infinity
--Number.MAX_VALUE * 2 // => -Infinity
-NaN // The not-a-number value
-Number.NaN // The same value, written another way
-0/0 // => NaN
-Infinity/Infinity // => NaN
-Number.MIN_VALUE/2 // => 0: underflow
--Number.MIN_VALUE/2 // => -0: negative zero
--1/Infinity // -> -0: also negative 0
--0
+Infinity; // A positive number too big to represent
+Number.POSITIVE_INFINITY; // Same value
+1 / 0; // => Infinity
+Number.MAX_VALUE * 2 - // => Infinity; overflow
+  Infinity; // A negative number too big to represent
+Number.NEGATIVE_INFINITY - // The same value
+  1 / 0 - // => -Infinity
+  Number.MAX_VALUE * 2; // => -Infinity
+NaN; // The not-a-number value
+Number.NaN; // The same value, written another way
+0 / 0; // => NaN
+Infinity / Infinity; // => NaN
+Number.MIN_VALUE / 2 - // => 0: underflow
+  Number.MIN_VALUE / 2 - // => -0: negative zero
+  1 / Infinity - // -> -0: also negative 0
+  0;
 // The following Number properties are defined in ES6
-Number.parseInt() // Same as the global parseInt() function
-Number.parseFloat() // Same as the global parseFloat() function
-Number.isNaN(x) // Is x the NaN value?
-Number.isFinite(x) // Is x a number and finite?
-Number.isInteger(x) // Is x an integer?
-Number.isSafeInteger(x) // Is x an integer -(2**53) < x < 2**53?
-Number.MIN_SAFE_INTEGER // => -(2**53 - 1)
-Number.MAX_SAFE_INTEGER // => 2**53 - 1
-Number.EPSILON // => 2**-52: smallest difference between numbers
+Number.parseInt(); // Same as the global parseInt() function
+Number.parseFloat(); // Same as the global parseFloat() function
+Number.isNaN(x); // Is x the NaN value?
+Number.isFinite(x); // Is x a number and finite?
+Number.isInteger(x); // Is x an integer?
+Number.isSafeInteger(x); // Is x an integer -(2**53) < x < 2**53?
+Number.MIN_SAFE_INTEGER; // => -(2**53 - 1)
+Number.MAX_SAFE_INTEGER; // => 2**53 - 1
+Number.EPSILON; // => 2**-52: smallest difference between numbers
 
 console.log(NaN === NaN); // => false
 console.log(NaN === 12); // => false
@@ -115,18 +115,21 @@ console.log(isFinite("1")); // true
 console.log(0 === -0); // => true
 console.log(1 / 0 === 1 / -0); // false
 
-// /************************************************
-//     Binary Floating Points & Rounding Errors
-// ************************************************/
+/************************************************
+    Binary Floating Points & Rounding Errors
+************************************************/
 
-// let x = 0.3 - 0.2;
-// let y = 0.2 - 0.1;
-// console.log(x, y);
-// console.log(x == y);
-// console.log(x == 0.1);
-// console.log(y == 0.1);
-// console.log(x * 9 + 22);
-// console.log(y * 9 + 22);
+console.log(0.1 + 0.2); // 0.30000000000000004
+let x = 0.3 - 0.2;
+let y = 0.2 - 0.1;
+console.log(x == y); // false
+console.log(x == 0.1); // false
+console.log(y == 0.1); // true
+console.log(x * 9 + 22); // 22.9
+console.log(y * 9 + 22); // 22.9
+console.log((0.175).toFixed(2)); // 0.17
+console.log((1.175).toFixed(2)); // 1.18
+console.log((2.175).toFixed(2)); // 2.17
 
 // /************************************************
 //     BigInt
