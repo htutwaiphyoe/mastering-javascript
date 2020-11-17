@@ -131,28 +131,34 @@ console.log((0.175).toFixed(2)); // 0.17
 console.log((1.175).toFixed(2)); // 1.18
 console.log((2.175).toFixed(2)); // 2.17
 
-// /************************************************
-//     BigInt
-// ************************************************/
+/************************************************
+    BigInt
+************************************************/
 
-// console.log(typeof 1234n);
+1234n; // A not-so-big BigInt literal
+0b111111n; // A binary BigInt
+0o7777n; // An octal BigInt
+0x8000000000000000n; // => 2n**63n: A 64-bit integer
 
-// let s = "1" + "0".repeat(100);
-// console.log(s);
-// console.log(1000n + 2000n); // => 3000n
-// console.log(3000n - 2000n); // => 1000n
-// console.log(2000n * 3000n); //// => 6000000n
-// console.log(3000n / 997n); // => 3n: the quotient is 3
-// console.log(3000n % 997n); // => 9n: and the remainder is 9
-// // console.log((2n ** 131071n) - 1n); // A Mersenne prime with 39457 decimal digits
-// // console.log(100n + 1); can't manipulate BigInt and other types
-// // console.log(100n + 's'); can't manipulate BigInt and other types
-// // console.log(Math.floor(100n)); Math Object can't manipulate BigInt
-// console.log(typeof ("1" + 1.0));
-// console.log(1 < 2n); //true
-// console.log(2 > 1n); // => true
-// console.log(0 == 0n); // => true
-// console.log(0 === 0n); // => false: the === checks for type equality as well
+BigInt(Number.MAX_SAFE_INTEGER); // => 9007199254740991n
+let string = "1" + "0".repeat(100); // 1 followed by 100 zeros.
+BigInt(string); // => 10n**100n: one googol
+
+1000n + 2000n; // => 3000n
+3000n - 2000n; // => 1000n
+2000n * 3000n; // => 6000000n
+3000n / 997n; // => 3n: the quotient is 3
+3000n % 997n; // => 9n: and the remainder is 9
+2n ** 131071n - 1n; // A Mersenne prime with 39457 decimal digits
+
+1n + 1 // Error Cannot mix BigInt and other types, use explicit conversions
+
+1 < 2n // => true
+2 > 1n // => true
+0 == 0n // => true
+0 === 0n // => false: the === checks for type equality as well
+
+Math.floor(1n) // Error
 
 // /************************************************
 //     Dates & Times
