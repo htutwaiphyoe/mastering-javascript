@@ -99,3 +99,7 @@ BigInt သည် regular number တွေနဲ့ arithematic operation လု�
 
 BigInt ကို bitwise operators တွေနဲ့ တွဲသုံးနိုင်ပြီး Math Object ရဲ့ operand အနေနဲ့တော့ သုံးလို့မရပါဘူး။\
 **_JS file က နမူနာ code ကိုကြည့်ပါ_**
+
+## 3.2.6 Dates and Times
+
+JavaScript မှာ Date and Time တွေအတွက် Date class ကိုသတ်မှတ်ပေးထားတယ်။ Date ဟာ Object ဖြစ်ပေမယ့် timestamp ဆိုတဲ့ numeric representation ရှိပါတယ်။ အဲ့ဒီ timestamp သည် January 1, 1970 ကစပြီးရေတွက်တဲ့ number of milliseconds တွေဖြစ်ပါတယ်။ eg. Date.now()

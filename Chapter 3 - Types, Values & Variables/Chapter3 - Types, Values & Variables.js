@@ -160,23 +160,24 @@ BigInt(string); // => 10n**100n: one googol
 
 Math.floor(1n) // Error
 
-// /************************************************
-//     Dates & Times
-// ************************************************/
-// var date = new Date(2020, 06, 24, 10, 11, 30);
-// var currDate = new Date();
-// console.log(typeof date, currDate, date - currDate);
-// console.log(currDate.getFullYear());
-// console.log(currDate.getMonth());
-// console.log(currDate.getDate());
-// console.log(currDate.getHours());
-// console.log(currDate.getDay());
-// console.log(currDate.getUTCHours());
-// console.log(typeof currDate.toUTCString());
-// console.log(typeof currDate.toString());
-// console.log(currDate.toLocaleDateString());
-// console.log(currDate.toLocaleTimeString());
-// console.log(currDate.toISOString());
+/************************************************
+    Dates & Times
+************************************************/
+console.log(Date.now());
+var date = new Date(2020, 06, 24, 10, 11, 30);
+var currDate = new Date();
+console.log(typeof date, currDate, date - currDate);
+console.log(currDate.getFullYear());
+console.log(currDate.getMonth());
+console.log(currDate.getDate());
+console.log(currDate.getHours());
+console.log(currDate.getDay());
+console.log(currDate.getUTCHours());
+console.log(typeof currDate.toUTCString());
+console.log(typeof currDate.toString());
+console.log(currDate.toLocaleDateString());
+console.log(currDate.toLocaleTimeString());
+console.log(currDate.toISOString());
 
 // /************************************************
 //     Text
