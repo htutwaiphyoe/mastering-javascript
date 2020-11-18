@@ -179,24 +179,30 @@ console.log(currDate.toLocaleDateString());
 console.log(currDate.toLocaleTimeString());
 console.log(currDate.toISOString());
 
-// /************************************************
-//     Text
-// ************************************************/
-// var p = "π";
-// var q = "e";
-// console.log(p.length);
-// console.log(q.length);
+/************************************************
+    Text
+************************************************/
+let euro = "€";
+let love = `💙`;
+console.log(euro.length); // => 1: this character has one 16-bit element
+console.log(love.length); // => 2: UTF-16 encoding of ❤ is "\ud83d\udc99"
 
-// /************************************************
-//     String Literals
-// ************************************************/
+/************************************************
+    String Literals
+************************************************/
 
-// let p = "asdf \nasdf";
-// let q = "\nasdf \
-// saf";
-// let x = "asdfsdf";
-// console.log(p, q);
-// console.log(x);
+// A string representing 2 lines written on one line:
+console.log("two\nlines");
+// A one-line string written on 3 lines:
+console.log("one\
+long\
+line"); // A two-line string written on two lines:
+console.log(`the newline character at the end of this line
+is included literally in this string`);
+
+console.log("I want to be a\"Software Engineer\" ");
+console.log('I\'m Htut Wai Phyoe')
+
 
 // /************************************************
 //     Working with String

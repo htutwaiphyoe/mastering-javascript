@@ -113,3 +113,14 @@ JavaScript ရဲ့ Unicode Character set သည် UTF-16 encoding ကို�
 
 string method တော်တော်များများကတော့ 16-bit values ပေါ်မှာ သတ်မှတ်ထားတဲ့အတွက် surrogate pair, normalization တွေမစဉ်းစားတော့ပါဘူး။ ES6 မှာ for/of, ... operator တွေသုံးပြီး string ရဲ့ character တစ်ခုဆီကို iterate လုပ်နိုင်ပါတယ်။\
 ***JS file က နမူနာ code ကိုကြည့်ပါ***
+
+## 3.3.1 String Literals
+
+JavaScript မှာ string ကိုရေးချင်ရင် single quotation(''), double quotation(""), backtick(``) ကြားမှာရေးရင်ရပါပြီ။ ES6 မှ backtick ကိုထည့်သွင်းခဲ့တာပါ။ ES5 မှာတော့ string literal ဟာ single-line string နဲ့ JavaScript Expression တွေကို + operator နဲ့ concatenation လုပ်ပါတယ်။ multiple line ‌ရေးချင်ရင် line အဆုံးမှာ \ ထည့်ပေးရပါမယ်။ newline ရေးချင်ရင်တော့ \n ကိုသုံးရမှာပါ။ backtick syntax မှာတော့ multiple line အတွက် ဘာမှရေးစရာမလိုပါဘူး။ 
+
+single quotes ထဲမှာ single quotes ရေးချင်တာပဲဖြစ်ဖြစ် double quotes မှာ double quotes ရေးချင်တာဖြစ်ဖြစ် \ သုံးပြီး escaping လုပ်ပေးရပါတယ်။ 
+eg. 'I\'m Web Developer'
+
+HTML code တွေနဲ့ JavaScript Code တွေရောရေးရင် style တစ်ခုဆီသုံးတာပိုကောင်းပါတယ်။ eg. JavaScript အတွက် '', HTML အတွက် ""သုံးတာမျိုးပါ။ 
+eg. <button onclick="alert('Thank you')">Click Me</button>\
+***JS file က နမူနာ code ကိုကြည့်ပါ***
