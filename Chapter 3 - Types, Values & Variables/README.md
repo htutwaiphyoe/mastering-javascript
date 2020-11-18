@@ -102,4 +102,14 @@ BigInt ကို bitwise operators တွေနဲ့ တွဲသုံးန�
 
 ## 3.2.6 Dates and Times
 
-JavaScript မှာ Date and Time တွေအတွက် Date class ကိုသတ်မှတ်ပေးထားတယ်။ Date ဟာ Object ဖြစ်ပေမယ့် timestamp ဆိုတဲ့ numeric representation ရှိပါတယ်။ အဲ့ဒီ timestamp သည် January 1, 1970 ကစပြီးရေတွက်တဲ့ number of milliseconds တွေဖြစ်ပါတယ်။ eg. Date.now()
+JavaScript မှာ Date and Time တွေအတွက် Date class ကိုသတ်မှတ်ပေးထားတယ်။ Date ဟာ Object ဖြစ်ပေမယ့် timestamp ဆိုတဲ့ numeric representation ရှိပါတယ်။ အဲ့ဒီ timestamp သည် January 1, 1970 ကစပြီးရေတွက်တဲ့ number of milliseconds တွေဖြစ်ပါတယ်။ eg. Date.now()\
+**_JS file က နမူနာ code ကိုကြည့်ပါ_**
+
+## 3.3 Text
+
+Text အတွက် JavaScript Type သည် string ပါ။ string ဆိုတာက immutable ordered sequence of 16-bit values (unicode characters) တွေဖြစ်ပါတယ်။ string ရဲ့ length ဆိုတာသည် number of 16-bit values ကိုပြောတာပါ။ string ကို array လို zero-based indexing သုံးပြီး 16-bit value တစ်ခုဆီကို ထုတ်ကြည့်လို့ရပါတယ်။ empty string ဆိုတာက length 0 ကိုပြောတာဖြစ်ပြီး single value ကိုပြချင်ရင်တော့ length 1 ရှိတဲ့ string ကိုသုံးရမှာပါ။  
+
+JavaScript ရဲ့ Unicode Character set သည် UTF-16 encoding ကိုသုံးပါတယ်။ ဒါကြောင့် character ရဲ့ Codepoints ဟာ 16 bitsနဲ့ ကိုက်ညီရင် one element လို့ ယူဆပြီး fit မဖြစ်ရင်တော့ two elements (surrogate pair) လို့ ယူပါတယ်။ ဆိုလိုတာက တစ်ခါတစ်ရံ single character ကို length 2ရှိတယ်လို့ ပြနိုင်တာကို ပြောတာပါ။ 
+
+string method တော်တော်များများကတော့ 16-bit values ပေါ်မှာ သတ်မှတ်ထားတဲ့အတွက် surrogate pair, normalization တွေမစဉ်းစားတော့ပါဘူး။ ES6 မှာ for/of, ... operator တွေသုံးပြီး string ရဲ့ character တစ်ခုဆီကို iterate လုပ်နိုင်ပါတယ်။\
+***JS file က နမူနာ code ကိုကြည့်ပါ***
