@@ -119,8 +119,7 @@ string method တော်တော်များများကတော့ 16
 JavaScript မှာ string ကိုရေးချင်ရင် single quotation(''), double quotation(""), backtick(``) ကြားမှာရေးရင်ရပါပြီ။ ES6 မှ backtick ကိုထည့်သွင်းခဲ့တာပါ။ ES5 မှာတော့ string literal ဟာ single-line string နဲ့ JavaScript Expression တွေကို + operator နဲ့ concatenation လုပ်ပါတယ်။ multiple line ‌ရေးချင်ရင် line အဆုံးမှာ \ ထည့်ပေးရပါမယ်။ newline ရေးချင်ရင်တော့ \n ကိုသုံးရမှာပါ။ backtick syntax မှာတော့ multiple line အတွက် ဘာမှရေးစရာမလိုပါဘူး။ 
 
 single quotes ထဲမှာ single quotes ရေးချင်တာပဲဖြစ်ဖြစ် double quotes မှာ double quotes ရေးချင်တာဖြစ်ဖြစ် \ သုံးပြီး escaping လုပ်ပေးရပါတယ်။ 
-eg. 'I\'m Web Developer'
 
 HTML code တွေနဲ့ JavaScript Code တွေရောရေးရင် style တစ်ခုဆီသုံးတာပိုကောင်းပါတယ်။ eg. JavaScript အတွက် '', HTML အတွက် ""သုံးတာမျိုးပါ။ 
-eg. <button onclick="alert('Thank you')">Click Me</button>\
+eg. onclick="alert('Thank you')"
 ***JS file က နမူနာ code ကိုကြည့်ပါ***
