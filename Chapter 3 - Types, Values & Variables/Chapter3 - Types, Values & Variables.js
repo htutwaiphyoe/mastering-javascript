@@ -188,7 +188,7 @@ console.log(euro.length); // => 1: this character has one 16-bit element
 console.log(love.length); // => 2: UTF-16 encoding of ❤ is "\ud83d\udc99"
 
 /************************************************
-    String Literals
+    3.3.1 String Literals
 ************************************************/
 
 // A string representing 2 lines written on one line:
@@ -202,6 +202,16 @@ is included literally in this string`);
 
 console.log("I want to be a\"Software Engineer\" ");
 console.log('I\'m Htut Wai Phyoe')
+
+/************************************************
+   3.3.2 Escape Sequences in String Literals
+************************************************/
+console.log("Hello \nWorld"); // new line
+console.log('You\'re right, it can\'t be a quote'); // Escaping
+console.log("\xA9"); // copyright symbol
+console.log("\u03c0"); // pi symbol
+console.log("\u{1f600}"); // 😀 emoji
+console.log('\#100daysofcode'); // Ignore \
 
 
 // /************************************************

@@ -123,3 +123,28 @@ single quotes ထဲမှာ single quotes ရေးချင်တာပဲဖ
 HTML code တွေနဲ့ JavaScript Code တွေရောရေးရင် style တစ်ခုဆီသုံးတာပိုကောင်းပါတယ်။ eg. JavaScript အတွက် '', HTML အတွက် ""သုံးတာမျိုးပါ။ 
 eg. onclick="alert('Thank you')"
 ***JS file က နမူနာ code ကိုကြည့်ပါ***
+
+## 3.3.2 Escape Sequences in String Literals
+
+backslash character \ ရဲ့ နောက်မှာ character တစ်ခုခုလိုက်ရင် string မှာ representable  မလုပ်နိုင်တဲ့ character အဖြစ်ပြောင်းနိုင်ပါတယ်။ ၎င်းကို **escape sequence** လို့ခေါ်ပါတယ်။  
+
+**List of escape sequences**
+
+- \0 The NUL character (\u0000)
+- \b Backspace (\u0008)
+- \t Horizontal tab (\u0009)
+- \n Newline (\u000A)
+- \v Vertical tab (\u000B)
+- \f Form feed (\u000C)
+- \r Carriage return (\u000D)
+- \" Double quote (\u0022)
+- \' Apostrophe or single quote (\u0027)
+- \\ Backslash (\u005C)
+- \xnn The Unicode character specified by the two hexadecimal digits nn
+- \unnnn The Unicode character specified by the four hexadecimal digits nnnn
+- \u{n} The Unicode character specified by the codepoint n, where n is one to six hexadecimal digits between 0 and
+   10FFFF (ES6)
+
+list ထဲက character တွေမဟုတ်ဘဲ အခြား character တွေဆိုရင်တော့ \ ကို ignore လုပ်မှာပါ။ 
+
+***JS file က နမူနာ code ကိုကြည့်ပါ***
