@@ -214,62 +214,71 @@ console.log("\u{1f600}"); // 😀 emoji
 console.log('\#100daysofcode'); // Ignore \
 
 
-// /************************************************
-//     Working with String
-// ************************************************/
-// console.log("hah" === "Hah");
-// console.log("hah" !== "Hah");
-// console.log("hah" > "Hah");
+/************************************************
+    3.3.3 Working with Strings
+************************************************/
 
-// let s = "Hello, world"; // Start with some text.
-// // Obtaining portions of a string
-// console.log(s.substring(1, 4)); // => "ell": the 2nd, 3rd, and 4th characters.
-// console.log(s.slice(1, 4)); // => "ell": same thing
-// console.log(s.slice(-3)); // => "rld": last 3 characters
-// console.log(s.split(", ")); // => ["Hello", "world"]: split at delimiter string
+let msg = "Hello, " + "world"; // Produces the string "Hello, world"
+let name = "Mg Mg";
+let greeting = "Welcome to my blog," + " " + name; // Welcome to my blog, Mg Mg
 
-// // Searching a string
-// console.log(s.indexOf("l")); // => 2: position of first letter l
-// console.log(s.indexOf("l", 3)); // => 3: position of first "l" at or after 3
-// console.log(s.indexOf("zz")); // => -1: s does not include the substring "zz"
-// console.log(s.lastIndexOf("l")); // => 10: position of last letter l
+console.log("hello" === "Hello"); // false
+console.log("hah" !== "Hello"); // true
+console.log("hello" > "Hello"); // true
+console.log(name.length); //5
 
-// // Boolean searching functions in ES6 and later
-// console.log(s.startsWith("Hell")); // => true: the string starts with these
-// console.log(s.endsWith("!")); // => false: s does not end with that
-// console.log(s.includes("or")); // => true: s includes substring "or"
+let s = "Hello, world"; // Start with some text.
+// Obtaining portions of a string
+s.substring(1, 4); // => "ell": the 2nd, 3rd, and 4th characters.
+s.slice(1, 4); // => "ell": same thing
+s.slice(-3); // => "rld": last 3 characters
+s.split(", "); // => ["Hello", "world"]: split at delimiter string
 
-// // Creating modified versions of a string
-// console.log(s.replace("llo", "ya")); // => "Heya, world"
-// console.log(s.toLowerCase()); // => "hello, world"
-// console.log(s.toUpperCase()); // => "HELLO, WORLD"
-// console.log(s.normalize()); // Unicode NFC normalization: ES6
-// console.log(s.normalize("NFD")); // NFD normalization. Also "NFKC", "NFKD"
+// Searching a string
+s.indexOf("l"); // => 2: position of first letter l
+s.indexOf("l", 3); // => 3: position of first "l" at or after 3
+s.indexOf("zz"); // => -1: s does not include the substring "zz"
+s.lastIndexOf("l"); // => 10: position of last letter l
 
-// // Inspecting individual (16-bit) characters of a string
-// console.log(s.charAt(0)); // => "H": the first character
-// console.log(s.charAt(s.length - 1)); // => "d": the last character
-// console.log(s.charCodeAt(0)); // => 72: 16-bit number at the specified position
-// console.log(s.codePointAt(0)); // => 72: ES6, works for codepoints > 16 bits
+// Boolean searching functions in ES6 and later
+s.startsWith("Hell"); // => true: the string starts with these
+s.endsWith("!"); // => false: s does not end with that
+s.includes("or"); // => true: s includes substring "or"
 
-// // String padding functions in ES2017
-// console.log("x".padStart(3)); // => " x": add spaces on the left to a length of 3
-// console.log("x".padEnd(3)); // => "x ": add spaces on the right to a length of 3
-// console.log("x".padStart(3, "*")); // => "**x": add stars on the left to a length of 3
-// console.log("x".padEnd(3, "-")); // => "x--": add dashes on the right to a length of 3
+// Creating modified versions of a string
+s.replace("llo", "ya"); // => "Heya, world"
+s.toLowerCase(); // => "hello, world"
+s.toUpperCase(); // => "HELLO, WORLD"
+s.normalize(); // Unicode NFC normalization: ES6
+s.normalize("NFD"); // NFD normalization. Also "NFKC", "NFKD"
 
-// // Space trimming functions. trim() is ES5; others ES2019
-// console.log(" test ".trim()); // => "test": remove spaces at start and end
-// console.log(" test ".trimStart()); // => "test ": remove spaces on left. Also trimLeft
-// console.log(" test ".trimEnd()); // => " test": remove spaces at right. Also trimRight
+// Inspecting individual (16-bit) characters of a string
+s.charAt(0); // => "H": the first character
+s.charAt(s.length - 1); // => "d": the last character
+s.charCodeAt(0); // => 72: 16-bit number at the specified position
+s.codePointAt(0); // => 72: ES6, works for codepoints > 16 bits
 
-// // Miscellaneous string methods
-// console.log(s.concat("!")); // => "Hello, world!": just use + operator instead
-// console.log("<>".repeat(5)); // => "<><><><><>": concatenate n copies. ES6
+// String padding functions in ES2017
+"x".padStart(3); // => " x": add spaces on the left to a length of 3
+"x".padEnd(3); // => "x ": add spaces on the right to a length of 3
+"x".padStart(3, "*"); // => "**x": add stars on the left to a length of 3
+"x".padEnd(3, "-"); // => "x--": add dashes on the right to a length of 3
 
-// let greeting = "hello, world";
-// console.log(s[0]); // => "h"
-// console.log(s[s.length - 1]); // => "d"
+// Space trimming functions. trim() is ES5; others ES2019
+" test ".trim(); // => "test": remove spaces at start and end
+" test ".trimStart(); // => "test ": remove spaces on left. Also trimLeft
+" test ".trimEnd(); // => " test": remove spaces at right. Also trimRight
+
+// Miscellaneous string methods
+s.concat("!"); // => "Hello, world!": just use + operator instead
+"<>".repeat(5); // => "<><><><><>": concatenate n copies. ES6
+
+// Read-only string
+let s = "hello, world";
+s[0] // => "h"
+s[s.length-1] // => "d"
+
+
 
 // /************************************************
 //    Template Literals

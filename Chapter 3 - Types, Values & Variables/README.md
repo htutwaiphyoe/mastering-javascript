@@ -139,12 +139,28 @@ backslash character \ ရဲ့ နောက်မှာ character တစ်ခ�
 - \r Carriage return (\u000D)
 - \" Double quote (\u0022)
 - \' Apostrophe or single quote (\u0027)
-- \\ Backslash (\u005C)
+- \\\ Backslash Backslash (\u005C)
 - \xnn The Unicode character specified by the two hexadecimal digits nn
 - \unnnn The Unicode character specified by the four hexadecimal digits nnnn
 - \u{n} The Unicode character specified by the codepoint n, where n is one to six hexadecimal digits between 0 and
    10FFFF (ES6)
 
 list ထဲက character တွေမဟုတ်ဘဲ အခြား character တွေဆိုရင်တော့ \ ကို ignore လုပ်မှာပါ။ 
+
+***JS file က နမူနာ code ကိုကြည့်ပါ***
+
+## 3.3.3 Working with Strings
+
+string တွေကို concatenate လုပ်မယ်ဆိုရင် **+** ကိုသုံးရပါတယ်။ **+** သည် first operand မှာ second operand ကို သွား join တာပါ။ eg. "Hello, " + "world!"
+
+string တွေကို ===, !===,  <=, =>, >, < operators တွေနဲ့ comparison လုပ်နိုင်ပါတယ်။ string နှစ်ခုဟာ ထပ်တူကျမှသာ ညီမှာဖြစ်ပါတယ်။  
+
+string ရဲ့ character အရေအတွက်ကိုလိုချင်ရင် length ဆိုတဲ့ property ကိုသုံးရမှာပါ။
+
+JS မှာ string အတွက် API (method) များစွာသတ်မှတ်ပေးထားပါတယ်။ 
+
+string ဟာ immutable ဖြစ်တဲ့အတွက် string modify function တွေဆိုရင် origin string ကို modify လုပ်တာမဟုတ်ဘဲ new string ကို return ပေးတာပါ။
+
+string ကို read-only arrays တွေလို [] သုံးပြီး individual character တွေကို access လုပ်လို့ရပါတယ်။ 
 
 ***JS file က နမူနာ code ကိုကြည့်ပါ***
