@@ -278,25 +278,24 @@ let s = "hello, world";
 s[0] // => "h"
 s[s.length-1] // => "d"
 
+/************************************************
+   3.3.4 Template Literals
+************************************************/
 
+let name = "Bill";
+let greeting = `Hello ${name}.`; // greeting == "Hello Bill."
+console.log(greeting);
 
-// /************************************************
-//    Template Literals
-// ************************************************/
-// let name = "Bill";
-// let greeting = `Hello ${name}.`; // greeting == "Hello Bill."
-// console.log(greeting);
+let errorMessage = `\
+\u2718 Test failure at :
 
-// let errorMessage = `\
-// \u2718 Test failure at :
+Stack trace:
 
-// Stack trace:
+`;
+console.log(errorMessage);
 
-// `;
-// console.log(errorMessage);
-
-// console.log(`\n`.length); // => 1: the string has a single newline character
-// console.log(String.raw`\n`.length); // => 2: a backslash character and the letter n
+console.log(`\n`.length); // => 1: the string has a single newline character
+console.log(String.raw`\n`.length); // => 2: a backslash character and the letter n
 
 // /************************************************
 //    Regular Expression

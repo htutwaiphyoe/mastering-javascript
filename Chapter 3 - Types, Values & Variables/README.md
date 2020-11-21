@@ -164,3 +164,14 @@ string ဟာ immutable ဖြစ်တဲ့အတွက် string modify funct
 string ကို read-only arrays တွေလို [] သုံးပြီး individual character တွေကို access လုပ်လို့ရပါတယ်။ 
 
 ***JS file က နမူနာ code ကိုကြည့်ပါ***
+
+## 3.3.4 Template Literals
+
+template literals ဆိုတာက ES6 မှာထည့်သွင်းခဲ့တဲ့ string literal ပုံစံတစ်မျိုးဖြစ်ပါတယ်။ quotation အစား backtick (``) ကြားမှာရေးရပါတယ်။ regualr string literal တွေနဲ့မတူတာက template literal ထဲမှာ JS expression တွေထည့်လို့ရပါတယ်။ 
+eg. let greeting = `Hello ${ name }.`; // greeting == "Hello Bill.". အလုပ်လုပ်ပုံကတော့ ${} ကြားထဲက expression ရဲ့ value ကိုတွက်ထုတ်ပြီး string ကိုပြောင်း template ရဲ့ ${} နေရာမှာ value ကို အစားထိုးလိုက်တာပါ။ ${} အပြင်က normal string text တွေပါ။
+
+template literals ထဲမှာ expression ကြိုက်သ‌လောက်ထည့်နိုင်တယ်။ escape character တွေသုံးနိုင်တယ်။ escaping လုပ်စရာမလိုဘူး။ line တွေကိုလည်း ကြိုက်သလောက် span နိုင်တယ်။ 
+
+template literals မှာ tagged template literals ဆိုတဲ့ အသုံးနည်းတဲ့ feature တစ်ခုရှိတယ်။ သူက opening backtick ရဲ့အရှေ့က tag function ဖြစ်ခဲ့ရင် `` ထဲက value တွေကို function ရဲ့ argument အဖြစ် pass ပေးလိုက်တယ်။ () မလိုပါဘူး။ String.raw ဆိုတဲ့ build-in tag function တစ်ခုရှိတယ်။ သူက backtick ထဲက \ တွေကို ignore လုပ်ပါတယ်။ Own template tag function တွေ ဖန်တီးနိုင်ပါတယ်။  
+
+***JS file က နမူနာ code ကိုကြည့်ပါ***
