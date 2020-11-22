@@ -181,5 +181,4 @@ template literals မှာ tagged template literals ဆိုတဲ့ အသ�
 
 JS မှာ string တွေကို pattern matching လုပ်ဖို့ regular expression (RegExp) ဆိုတဲ့ data type ရှိတယ်။ regular expression literal ရေးချင်ရင် // နှစ်ခုကြားမှာရေးရတယ်။ eg. /^HTML/ RegExp မှာလည်း build-in method တွေရှိသလို string method တွေမှာလည်း RegExp ကိုလက်ခံတဲ့ method တွေရှိပါတယ်။
 
-
 ***JS file က နမူနာ code ကိုကြည့်ပါ***
