@@ -175,3 +175,11 @@ template literals ထဲမှာ expression ကြိုက်သ‌လော�
 template literals မှာ tagged template literals ဆိုတဲ့ အသုံးနည်းတဲ့ feature တစ်ခုရှိတယ်။ သူက opening backtick ရဲ့အရှေ့က tag function ဖြစ်ခဲ့ရင် `` ထဲက value တွေကို function ရဲ့ argument အဖြစ် pass ပေးလိုက်တယ်။ () မလိုပါဘူး။ String.raw ဆိုတဲ့ build-in tag function တစ်ခုရှိတယ်။ သူက backtick ထဲက \ တွေကို ignore လုပ်ပါတယ်။ Own template tag function တွေ ဖန်တီးနိုင်ပါတယ်။  
 
 ***JS file က နမူနာ code ကိုကြည့်ပါ***
+
+
+## 3.3.5 Pattern Matching
+
+JS မှာ string တွေကို pattern matching လုပ်ဖို့ regular expression (RegExp) ဆိုတဲ့ data type ရှိတယ်။ regular expression literal ရေးချင်ရင် // နှစ်ခုကြားမှာရေးရတယ်။ eg. /^HTML/ RegExp မှာလည်း build-in method တွေရှိသလို string method တွေမှာလည်း RegExp ကိုလက်ခံတဲ့ method တွေရှိပါတယ်။
+
+
+***JS file က နမူနာ code ကိုကြည့်ပါ***

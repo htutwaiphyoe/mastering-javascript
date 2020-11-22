@@ -297,16 +297,20 @@ console.log(errorMessage);
 console.log(`\n`.length); // => 1: the string has a single newline character
 console.log(String.raw`\n`.length); // => 2: a backslash character and the letter n
 
-// /************************************************
-//    Regular Expression
-// ************************************************/
-// let text = "testing: 1, 2, 3"; // Sample text
-// let pattern = /\d+/g; // Matches all instances of one or more digits
-// console.log(pattern.test(text)); // => true: a match exists
-// console.log(text.search(pattern)); // => 9: position of first match
-// console.log(text.match(pattern)); // => ["1", "2", "3"]: array of all matches
-// console.log(text.replace(pattern, "#")); // => "testing: #, #, #"
-// console.log(text.split(/\D+/)); // => ["","1","2","3"]: split on nondigits
+/************************************************
+   R3.3.5 Pattern Matching
+************************************************/
+/^HTML/; // Match the letters H T M L at the start of a string
+/[1-9][0-9]*/; // Match a nonzero digit, followed by any # of digits
+/\bjavascript\b/i; // Match "javascript" as a word, case-insensitive
+
+let text = "testing: 1, 2, 3"; // Sample text
+let pattern = /\d+/g; // Matches all instances of one or more digits
+console.log(pattern.test(text)); // => true: a match exists
+console.log(text.search(pattern)); // => 9: position of first match
+console.log(text.match(pattern)); // => ["1", "2", "3"]: array of all matches
+console.log(text.replace(pattern, "#")); // => "testing: #, #, #"
+console.log(text.split(/\D+/)); // => ["","1","2","3"]: split on nondigits
 
 // /************************************************
 //    Boolean
