@@ -151,14 +151,14 @@ BigInt(string); // => 10n**100n: one googol
 3000n % 997n; // => 9n: and the remainder is 9
 2n ** 131071n - 1n; // A Mersenne prime with 39457 decimal digits
 
-1n + 1 // Error Cannot mix BigInt and other types, use explicit conversions
+1n + 1; // Error Cannot mix BigInt and other types, use explicit conversions
 
-1 < 2n // => true
-2 > 1n // => true
-0 == 0n // => true
-0 === 0n // => false: the === checks for type equality as well
+1 < 2n; // => true
+2 > 1n; // => true
+0 == 0n; // => true
+0 === 0n; // => false: the === checks for type equality as well
 
-Math.floor(1n) // Error
+Math.floor(1n); // Error
 
 /************************************************
     Dates & Times
@@ -200,19 +200,18 @@ line"); // A two-line string written on two lines:
 console.log(`the newline character at the end of this line
 is included literally in this string`);
 
-console.log("I want to be a\"Software Engineer\" ");
-console.log('I\'m Htut Wai Phyoe')
+console.log('I want to be a"Software Engineer" ');
+console.log("I'm Htut Wai Phyoe");
 
 /************************************************
    3.3.2 Escape Sequences in String Literals
 ************************************************/
 console.log("Hello \nWorld"); // new line
-console.log('You\'re right, it can\'t be a quote'); // Escaping
+console.log("You're right, it can't be a quote"); // Escaping
 console.log("\xA9"); // copyright symbol
 console.log("\u03c0"); // pi symbol
 console.log("\u{1f600}"); // 😀 emoji
-console.log('\#100daysofcode'); // Ignore \
-
+console.log("#100daysofcode"); // Ignore \
 
 /************************************************
     3.3.3 Working with Strings
@@ -275,8 +274,8 @@ s.concat("!"); // => "Hello, world!": just use + operator instead
 
 // Read-only string
 let s = "hello, world";
-s[0] // => "h"
-s[s.length-1] // => "d"
+s[0]; // => "h"
+s[s.length - 1]; // => "d"
 
 /************************************************
    3.3.4 Template Literals
@@ -298,7 +297,7 @@ console.log(`\n`.length); // => 1: the string has a single newline character
 console.log(String.raw`\n`.length); // => 2: a backslash character and the letter n
 
 /************************************************
-   R3.3.5 Pattern Matching
+   3.3.5 Pattern Matching
 ************************************************/
 /^HTML/; // Match the letters H T M L at the start of a string
 /[1-9][0-9]*/; // Match a nonzero digit, followed by any # of digits
@@ -312,26 +311,34 @@ console.log(text.match(pattern)); // => ["1", "2", "3"]: array of all matches
 console.log(text.replace(pattern, "#")); // => "testing: #, #, #"
 console.log(text.split(/\D+/)); // => ["","1","2","3"]: split on nondigits
 
-// /************************************************
-//    Boolean
-// ************************************************/
-// let a = 1;
-// let b = 2;
-// if (a === 4) {
-//   b = b + 1;
-// } else {
-//   a = a + 1;
-// }
+/************************************************
+   3.4 Boolean Values
+************************************************/
+// Control Structure
+let a = 1;
+let b = 2;
+if (a === 4) {
+  b = b + 1;
+} else {
+  a = a + 1;
+}
+console.log(a, b);
 
-// // undefined
-// // null
-// // 0
-// // -0
-// // NaN
-// // "" // the empty string
+// truthy, falsy values
+undefined;
+null;
+0 - 0;
+NaN;
+(""); // the empty string
 
-// let c = true;
-// console.log(c.toString());
+// toString()
+let c = true;
+console.log(c.toString());
+
+// Logical (boolean) operators
+if ((a === 0 && b === 0) || !(c === 0)) {
+  // a and b are both zero or c is non-zero
+}
 
 // /*********************************************************
 //             null & undefined

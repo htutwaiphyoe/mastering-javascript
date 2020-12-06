@@ -182,3 +182,13 @@ template literals မှာ tagged template literals ဆိုတဲ့ အသ�
 JS မှာ string တွေကို pattern matching လုပ်ဖို့ regular expression (RegExp) ဆိုတဲ့ data type ရှိတယ်။ regular expression literal ရေးချင်ရင် // နှစ်ခုကြားမှာရေးရတယ်။ eg. /^HTML/ RegExp မှာလည်း build-in method တွေရှိသလို string method တွေမှာလည်း RegExp ကိုလက်ခံတဲ့ method တွေရှိပါတယ်။
 
 ***JS file က နမူနာ code ကိုကြည့်ပါ***
+
+## 3.4 Boolea Values
+
+boolean မှာ value နှစ်မျိုးပဲရှိပါတယ်။ true နဲ့ false ပါ။ comparison လုပ်တဲ့အခါတွေမှာ true, false ရပါတယ်။ eg. a === 1. boolean ကို control structure (if/else) တွေမှာ သုံးလေ့ရှိပါတယ်။ JavaScript သည် dynamic type programming ဖြစ်တဲ့အတွက် other value တွေကို boolean value အဖြစ်ပြောင်းနိုင်ပါတယ်။ null, undefined, "", NaN, 0, -0 တွေသည် falsy value (false တန်ဖိုးပေးသော) ဖြစ်ပြီး အခြား value တွေကတော့ truthy (true တန်ဖိုးပေးသော) value  ဖြစ်ပါတယ်။ eg. if(a !== null) အစား if(a) လို့ရေးလို့ရတာကိုဆိုလိုတာပါ။ ဒါပေမယ့် မတူတာက ပထမ if သည်  a ဟာ null နဲ့ မညီမှ block ကို execute ပြီး ဒုတိယ if ကတော့ a ဟာ false or other falsy values မဟုတ်မှ block ကို execute လုပ်မှာဖြစ်ပါတယ်။ value ပေါ်မူတည်ပြီး စစ်ချင်တာဆိုရင်တော့ ပထမနည်း explicit comparison ကိုပဲသုံးရမှာပါ။ 
+
+Boolean မှာ toString() method ရှိပါတယ်။ သူက string "true", "false" return ပြန်ပါတယ်။ 
+
+&&, ||, ! ဆိုတဲ့ logical operators (boolean opeartors) နဲ့ တွဲသုံးလေ့ရှိပါတယ်။
+
+***JS file က နမူနာ code ကိုကြည့်ပါ***
