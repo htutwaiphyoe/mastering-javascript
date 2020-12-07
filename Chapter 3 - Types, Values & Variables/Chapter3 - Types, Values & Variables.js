@@ -340,14 +340,29 @@ if ((a === 0 && b === 0) || !(c === 0)) {
   // a and b are both zero or c is non-zero
 }
 
-// /*********************************************************
-//             null & undefined
-// *********************************************************/
+/*********************************************************
+  3.5 null & undefined
+*********************************************************/
 
-// console.log(typeof null);
-// console.log(typeof undefined);
-// console.log(undefined === null);
-// console.log(undefined == null);
+console.log(typeof null); // object
+console.log(typeof undefined); // undefined
+console.log(undefined === null); // false
+console.log(undefined == null); // true
+
+let i = undefined;
+let j = null;
+console.log(i, j); // undefined, null
+
+let k = {};
+let l;
+function show() {}
+function show2(a) {
+  console.log(a);
+}
+console.log(k.i); // undefined
+console.log(l); // undefined
+console.log(show()); // undefined
+show2(); // undefined
 
 // /*********************************************************
 //             Symbol

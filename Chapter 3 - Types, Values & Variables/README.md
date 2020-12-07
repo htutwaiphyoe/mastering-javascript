@@ -183,7 +183,7 @@ JS မှာ string တွေကို pattern matching လုပ်ဖို့
 
 ***JS file က နမူနာ code ကိုကြည့်ပါ***
 
-## 3.4 Boolea Values
+## 3.4 Boolean Values
 
 boolean မှာ value နှစ်မျိုးပဲရှိပါတယ်။ true နဲ့ false ပါ။ comparison လုပ်တဲ့အခါတွေမှာ true, false ရပါတယ်။ eg. a === 1. boolean ကို control structure (if/else) တွေမှာ သုံးလေ့ရှိပါတယ်။ JavaScript သည် dynamic type programming ဖြစ်တဲ့အတွက် other value တွေကို boolean value အဖြစ်ပြောင်းနိုင်ပါတယ်။ null, undefined, "", NaN, 0, -0 တွေသည် falsy value (false တန်ဖိုးပေးသော) ဖြစ်ပြီး အခြား value တွေကတော့ truthy (true တန်ဖိုးပေးသော) value  ဖြစ်ပါတယ်။ eg. if(a !== null) အစား if(a) လို့ရေးလို့ရတာကိုဆိုလိုတာပါ။ ဒါပေမယ့် မတူတာက ပထမ if သည်  a ဟာ null နဲ့ မညီမှ block ကို execute ပြီး ဒုတိယ if ကတော့ a ဟာ false or other falsy values မဟုတ်မှ block ကို execute လုပ်မှာဖြစ်ပါတယ်။ value ပေါ်မူတည်ပြီး စစ်ချင်တာဆိုရင်တော့ ပထမနည်း explicit comparison ကိုပဲသုံးရမှာပါ။ 
 
@@ -192,3 +192,16 @@ Boolean မှာ toString() method ရှိပါတယ်။ သူက string
 &&, ||, ! ဆိုတဲ့ logical operators (boolean opeartors) နဲ့ တွဲသုံးလေ့ရှိပါတယ်။
 
 ***JS file က နမူနာ code ကိုကြည့်ပါ***
+
+## 3.5 null and undefined
+
+**null** သည် language keyword, absence of value ကိုဆိုလိုတယ်။ **ပျက်ပြယ်တယ်** လို့အဓိပ္ပာယ်ရတယ်။
+typeof နဲ့ထုတ်ကြည့်ရင် **object** type ကိုရတယ်။ သူ့ကို program မှာ variable မှာ no value လို့သတ်မှတ်ချင်ရင်သုံးတယ်။
+
+**undefined** ကတော့ predefined global constant, null နဲ့ ဆင်တယ် absence of value ပဲ။ သူက **မသတ်မှတ်ဘူး** လို့ အဓိပ္ပာယ်ရတယ်။ typeof နဲ့ ထုတ်ကြည့်ရင် undefined ကိုရတယ်။ program မှာ variable ကို initialize မလုပ်ရသေးတယ့် အခါမျိုး၊ object, array တို့မှာ မရှိတဲ့ element ကို ထုတ်ကြည့်တဲ့အခါမျိုး။ return မပြန်ထားတဲ့ function။ arguments မပေးထားတဲ့ function ရဲ့ parameters တွေမှာ undefined ကိုရပါတယ်။ 
+
+**null** နဲ့ **undefined** သည် absence of value ကိုဖော်ပြတာချင်းတူတဲ့အတွက် ယေဘုယျအားဖြင့် တူတယ်လို့သတ်မှတ်နိုင်ပေမယ့် အဓိပ္ပာယ်အရ ပျက်ပြယ်တာသည် တစ်ခုခုရှိထားလို့ ပျက်ပြယ်တာလို့သတ်မှတ်နိုင်ပြီး မသတ်မှတ်ဘူးဆိုတာက ဘာတစ်ခုမှမရှိတာလို့ဆိုနိုင်တယ်။ အဲ့ဒါကြောင့် null == undefined သည် true ဖြစ်ပြီး null === undefined သည် false ရပါတယ်။ နှစ်ခုလုံး falsy value တွေဖြစ်ပြီး method တွေ properties တွေမရှိပါဘူး။ 
+
+**undefined** ကို program ရဲ့ system-level, unexpected error လို့ခေါ်နိုင်ပြီး **null** ကိုတော့ program-level, expected error လို့ခေါ်နိုင်ပါတယ်။
+
+**_JS file က နမူနာ code ကိုကြည့်ပါ_**
