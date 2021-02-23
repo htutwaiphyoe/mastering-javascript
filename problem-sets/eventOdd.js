@@ -1,5 +1,3 @@
-
-
 // find odd or even number without conditional statement
 
 function checkOdd(num) {
@@ -9,4 +7,4 @@ function checkOdd(num) {
     }
     return isOdd;
 }
-console.log(checkOdd(0));
+console.log(checkOdd(9));

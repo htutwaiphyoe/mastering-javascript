@@ -11,7 +11,7 @@ function max(num1, num2, num3) {
         i++;
     }
 
-    return nums[i++];
+    return nums[i++] || Number.MIN_VALUE;
 }
 
-console.log(max(4, 1, 2));
+console.log(max(-2, -2, -2));
