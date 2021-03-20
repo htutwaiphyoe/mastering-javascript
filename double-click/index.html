@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Double Click</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            div {
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column;
+            }
+            figure {
+                width: 300px;
+
+                border: 1px solid #ccc;
+            }
+            img {
+                width: 100%;
+                cursor: url("https://findicons.com/files/icons/208/peter_griffin/128/peter_griffin_football_head.png"),
+                    auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <figure>
+                <img
+                    src="https://scontent.xx.fbcdn.net/v/t1.0-9/162535308_738205000213648_1527845275612810166_o.jpg?_nc_cat=102&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=hmkU-eCCgicAX_c-NEe&_nc_ht=scontent.xx&oh=18aef1bfca8a5536c76783d293bf154a&oe=6079A0FB"
+                    alt=""
+                />
+                <p>0 likes</p>
+            </figure>
+        </div>
+    </body>
+
+    <script>
+        let likes = 0;
+        const img = document.querySelector("img");
+        const likeDOM = document.querySelector("p");
+        img.addEventListener("dblclick", (e) => {
+            likes++;
+            likeDOM.innerText = `${likes} likes`;
+        });
+    </script>
+</html>
