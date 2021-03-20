@@ -16,5 +16,5 @@
     -   [ternary operator without conditional expression](https://github.com/htutwaiphyoe/mastering-javascript/blob/master/problem-sets/ternary.js)
     -   [two sum - leetcode](https://github.com/htutwaiphyoe/mastering-javascript/blob/master/problem-sets/twoSum.js)
 -   [the-definitive-guide]()
-    -   [Chapter 2 - Lexical Structure](https://github.com/htutwaiphyoe/TheDefinitiveGuide/tree/master/Chapter%202%20-%20The%20Lexical%20Structure)
-    -   [Chapter 3 - Types, Values & Variables](https://github.com/htutwaiphyoe/TheDefinitiveGuide/tree/master/Chapter%203%20-%20Types%2C%20Values%20%26%20Variables)
+    -   [chapter 2 - the lexical structure](https://github.com/htutwaiphyoe/TheDefinitiveGuide/tree/master/Chapter%202%20-%20The%20Lexical%20Structure)
+    -   [chapter 3 - types, values & variables](https://github.com/htutwaiphyoe/TheDefinitiveGuide/tree/master/Chapter%203%20-%20Types%2C%20Values%20%26%20Variables)
