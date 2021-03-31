@@ -13,3 +13,8 @@ const isTrue = !"";
 const isFalse = !"true";
 const alsoTrue = !!"true";
 console.log(isTrue, isFalse, alsoTrue);
+
+// conditionally setting a variable
+const user = {};
+const photo = user.photo || "default.png";
+console.log(photo);
