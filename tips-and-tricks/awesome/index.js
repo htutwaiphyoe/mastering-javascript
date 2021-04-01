@@ -32,7 +32,12 @@ const values = ["1", "5", "18"];
 console.log(values.map(Number));
 console.log(values.map(Boolean));
 
-// float to integer
+// float to integer with bitwise operator
 const f = 12.121212;
 const i = ~~f;
 console.log(i);
+
+// get last item of array
+const arr = [1, 2, 3, 4, 5];
+console.log(arr.slice(-1));
+console.log(arr.slice(-3));
