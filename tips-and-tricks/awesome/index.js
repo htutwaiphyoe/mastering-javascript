@@ -26,3 +26,8 @@ console.log(val, typeof val);
 // convert to Numbergit
 const num = +"2021";
 console.log(num, typeof num);
+
+// casting values in array
+const values = ["1", "5", "18"];
+console.log(values.map(Number));
+console.log(values.map(Boolean));
