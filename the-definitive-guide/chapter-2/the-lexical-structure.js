@@ -1,86 +1,110 @@
 /**********************  Chapter 2 - Lexical Structure *********************/
+// 2.1 The Text of a JavaScript Program
 
-/*****************************************
- * 2.5 Unicode
+// Case-sensitive
+let name = "MgMg";
+let Name = "AungAung";
+console.log(name, Name);
+
+// Whitespaces
+function showName(name) {
+    console.log(name);
+}
+
+// line break & carriage return
+console.log("My\n"); // the \n moves to the beginning of the next line.
+console.log("name\ris"); // The \r moves to the beginning of the current line, without moving to the next line
+console.log("Mg\r\nMg"); // The \r moves to the beginning of the current line and move to the next line
+
+/*
+ * @explanation
+ * The difference is simply as that, when you using the Carriage return escape sequence \r at the end of each print sequence, the next iteration of this sequence do not getting into the following text line - At the end of each print sequence, the cursor did not jumped to the *beginning of the next line.
+ * Instead, the cursor jumped back to the beginning of the line, on which he has been at the end of, before using the \r character. - The result is that each following iteration of the print sequence is replacing the previous one.
+ * Note: A \n do not necessarily jump to the beginning of following text line. On some, in general more elder, operation systems the result of the \n newline character can be, that it jumps to anywhere in the following line, not just to the beginning. That is why, they rquire to use \r \n to get at the start of the next text line.
  */
 
-const နာမည် = "ထွဋ်ဝေဖြိုး";
+// /*****************************************
+//  * 2.5 Unicode
+//  */
 
-const ပြပါ = () => {
-  console.log(နာမည်);
-};
+// const နာမည် = "ထွဋ်ဝေဖြိုး";
 
-ပြပါ();
+// const ပြပါ = () => {
+//     console.log(နာမည်);
+// };
 
-/*****************************************
- * 2.5.1 Unicode Escape Sequences
- */
+// ပြပါ();
 
-let café = 1; // Define a variable using a Unicode character
-console.log(caf\u00e9); // => 1; access the variable using an escape sequence
-console.log(caf\u{E9}); // => 1; another form of the same escape sequence
-console.log("\u{1F600}"); // Prints a smiley face emoji
+// /*****************************************
+//  * 2.5.1 Unicode Escape Sequences
+//  */
 
-/*****************************************
- * 2.5.2 Unicode Normalizaton
- */
+// let café = 1; // Define a variable using a Unicode character
+// console.log(café); // => 1; access the variable using an escape sequence
+// console.log(café); // => 1; another form of the same escape sequence
+// console.log("\u{1F600}"); // Prints a smiley face emoji
 
-const café = 1; // This constant is named "caf\u{e9}"
-const café = 2; // This constant is different: "cafe\u{301}"
-café // => 1: this constant has one value
-café // => 2: this indistinguishable constant has a different value
+// /*****************************************
+//  * 2.5.2 Unicode Normalizaton
+//  */
 
-/*****************************************
- * 2.6 Optional Semicolons
- */
+// const café = 1; // This constant is named "caf\u{e9}"
+// const café = 2; // This constant is different: "cafe\u{301}"
+// café; // => 1: this constant has one value
+// café; // => 2: this indistinguishable constant has a different value
 
- // semicolon can be omitted
- a = 3
- b = 4
+// /*****************************************
+//  * 2.6 Optional Semicolons
+//  */
 
- // semicolon must be added
- a = 3; b = 4;
+// // semicolon can be omitted
+// a = 3;
+// b = 4;
 
-// continuation of statement 1
-let a
-a
-=
-3
-console.log(a)
-let a; a = 3; console.log(a); // interpreted
+// // semicolon must be added
+// a = 3;
+// b = 4;
 
-// continuation of statement 2
+// // continuation of statement 1
+// let a;
+// a = 3;
+// console.log(a);
+// let a;
+// a = 3;
+// console.log(a); // interpreted
 
-let y = x + f
-(a+b).toString()
+// // continuation of statement 2
 
-let y = x + f(a + b).toString(); // interpreted
+// let y = x + f(a + b).toString();
 
-// defensive semicolon
+// let y = x + f(a + b).toString(); // interpreted
 
-let x = 0 // Semicolon omitted here
-;[x,x+1,x+2].forEach(console.log) // Defensive ; keeps this statement separate
+// // defensive semicolon
 
-// three exceptions
+// let x = 0; // Semicolon omitted here
+// [x, x + 1, x + 2].forEach(console.log); // Defensive ; keeps this statement separate
 
-// written
-return
-true;
+// // three exceptions
 
-// interpreted
-return; true;
+// // written
+// return;
+// true;
 
-// excepted
-return true;
+// // interpreted
+// return;
+// true;
 
-// written
-x
-++
-y
+// // excepted
+// return true;
 
-// interpreted
-x; ++y;
+// // written
+// x;
+// ++y;
 
-// excepted
-x++; y;
+// // interpreted
+// x;
+// ++y;
 
+// // excepted
+// x++;
+// y;
