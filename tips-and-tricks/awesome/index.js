@@ -31,3 +31,8 @@ console.log(num, typeof num);
 const values = ["1", "5", "18"];
 console.log(values.map(Number));
 console.log(values.map(Boolean));
+
+// float to integer
+const f = 12.121212;
+const i = ~~f;
+console.log(i);
