@@ -23,7 +23,7 @@ console.log(photo);
 const val = 1 + "";
 console.log(val, typeof val);
 
-// convert to Numbergit
+// convert to Number
 const num = +"2021";
 console.log(num, typeof num);
 
