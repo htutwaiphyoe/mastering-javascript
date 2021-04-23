@@ -8,16 +8,15 @@ const pairs = {
     "[": "]",
 };
 const isValid = function (s) {
-    let tracker = [];
-    for (let i = 0; i < s.length; i++) {
-        let curr = s[i];
-        if (pairs[curr]) tracker.push(curr);
+    const tracker = [];
+    for (let c of s) {
+        if (pairs[c]) tracker.push(pairs[c]);
         else {
             if (!tracker.length) return false;
-            if (pairs[tracker.pop()] !== curr) return false;
+            if (c !== tracker.pop()) return false;
         }
     }
     return tracker.length === 0;
 };
 
-console.log(isValid("}}"));
+console.log(isValid("()"));
