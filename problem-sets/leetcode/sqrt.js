@@ -3,7 +3,7 @@
  * @return {number}
  */
 const mySqrt = function (x) {
-    return parseInt(x ** 0.5, 10);
+    return ~~(x ** 0.5);
 };
 
 console.log(mySqrt(8));
