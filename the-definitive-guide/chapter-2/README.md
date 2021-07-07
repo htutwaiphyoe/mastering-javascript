@@ -1,4 +1,4 @@
-# Chapter 2 - Lexical Structure
+# Chapter 2 - Lexical Structure (ဝေါဟာရဆိုင်ရာ တည်ဆောက်ပုံ)
 
 Lexical Structure ဆိုတာက prgramming language တစ်ခုအတွက် သတ်မှတ်ထားတဲ့ အခြေခံစည်းမျဉ်းတွေ ဖြစ်ပါတယ်။ lowest-level syntax ဖြစ်ပြီးတော့ program ကို ဘယ်လိုရေး
 ရမယ်၊ variable နာမည်ကိုဘယ်လိုပေးရမယ်စသော ရေးထုံးတွေကို ပြောတာဖြစ်ပါတယ်
