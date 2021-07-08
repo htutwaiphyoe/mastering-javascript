@@ -49,3 +49,7 @@ ES6/ES2015 => a huge update
 ES => ECMAScript
 
 After ES6/ES2015, there is now a yearly new release with new features. Starting from ES6/ES2015 is called **modern javascript**
+
+## Linking a JavaScript File in HTML file
+
+add script tag at the end of the body tag and link with src by passing the path of JavaScript file
