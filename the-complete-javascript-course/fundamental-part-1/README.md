@@ -104,3 +104,15 @@ typeof => return a string of type name of a value
 
 typeof undefined is undefined which means both value and type are undefined.
 typeof null is object. It might be bug of language.
+
+## let, const and var
+
+var => old version
+let, const => introduced in ES2015
+
+let => variable which value can be changed later, mutable variable
+const => variable which value can not be changed, immutable variable, value must be initialized
+var => almost the same as let, value can be changed
+
+best practice: use const as much as you can, use let only the value of variable is supposed to change, to get as little as variable mutation, avoid var as much as you can, avoid declaration without keywords
+
