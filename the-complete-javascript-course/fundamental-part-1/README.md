@@ -135,3 +135,22 @@ decrement operator => --, x--, --x, decrease 1 from the value
 comparison operators => produces boolean values, >, <, <=, >=
 
 console can access variables in current running browser tab.
+
+## Operator precedence
+
+precedence => the order of operator execution, which operators execute first
+
+If operators have different precedence levels, the operator with the highest precedence goes first and associativity does not matter.
+
+associativity => comes into play when there are multiple operators of the same precedence.
+
+left to right => (6 / 3) / 2
+right to left => 2 ** (3 ** 2)
+
+the order of evaluation is always left-to-right irregardless of associativity and precedence.
+
+Grouping () is listed as having the highest precedence. However, that does not always mean the expression within the grouping symbols ( … ) is evaluated first, especially when it comes to short-circuiting.
+
+a && (b + c)
+
+check the table of operator sematic in MDN
