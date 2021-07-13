@@ -14,3 +14,7 @@ console.log(a || 3 + 1);
 console.log(a && 3 + 1);
 console.log(a ?? 3 + 1);
 console.log(a?.b);
+
+console.log("multiple \nstring");
+console.log(`multiple
+string`);

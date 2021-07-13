@@ -154,3 +154,7 @@ Grouping () is listed as having the highest precedence. However, that does not a
 a && (b + c)
 
 check the table of operator sematic in MDN
+
+## Strings & Template literals
+
+template literals => solve complex string concatenation problem, use `` instead of quotes, ${} is used to insert expressions, can write multi-line string without \n.
