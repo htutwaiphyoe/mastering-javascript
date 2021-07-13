@@ -93,7 +93,7 @@ A value can be primitive or object.
 7. BigInt => larger integers that are too large to represent with Number type, introduced in ES2020
 
 JavaScript is dynamic type language. We do not need to manually define data type of the value stored in a variable.
-Data types are determined in runtime. Value has type, not variable. We can reassign value with different data type to the same variable. to reassign a variable, let or const keyword is not needed.
+Data types are determined automatically. Value has type, not variable. We can reassign value with different data type to the same variable. to reassign a variable, let or const keyword is not needed.
 
 Comments 
 JavaScript ignores comments.
@@ -116,3 +116,22 @@ var => almost the same as let, value can be changed
 
 best practice: use const as much as you can, use let only the value of variable is supposed to change, to get as little as variable mutation, avoid var as much as you can, avoid declaration without keywords
 
+## Basic operators
+
+operators => manipulate values to transform values or combine values
+
+arithematic operators => do mathematical operations, +, -, /, *, **, %
+ 
+console.log() can output multiple values at the same time. console.log(value1, value2,...)
+
+\+ operator can also concatenate strings.
+
+assignment operator => =, +=, -=, /=, *=, **=, %=, let x = 1 means 1 is assign to x, not equal to.
+
+increment operator => ++, x++, ++x, increase 1 to the value
+
+decrement operator => --, x--, --x, decrease 1 from the value
+
+comparison operators => produces boolean values, >, <, <=, >=
+
+console can access variables in current running browser tab.
