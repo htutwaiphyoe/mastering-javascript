@@ -158,3 +158,19 @@ check the table of operator sematic in MDN
 ## Strings & Template literals
 
 template literals => solve complex string concatenation problem, use `` instead of quotes, ${} is used to insert expressions, can write multi-line string without \n.
+
+## if/else
+
+if/else => control structure, use to control how the way code is executed.
+
+if => only the condition in if is true, block of if is executed
+if(boolean){
+
+}
+
+else => block of else is executed when the condition in if is false, else block is optional
+if(boolean){
+
+}else{
+
+}
