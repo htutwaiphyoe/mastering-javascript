@@ -136,7 +136,7 @@ comparison operators => produces boolean values, >, <, <=, >=
 
 console can access variables in current running browser tab.
 
-## Operator precedence
+## Operator semantic
 
 precedence => the order of operator execution, which operators execute first
 
