@@ -1,20 +1,34 @@
-let age = 2021 - 2000;
-console.log(age);
+// let age = 2021 - 2000;
+// console.log(age);
 
-console.log("1" + 1 + 1);
+// console.log("1" + 1 + 1);
 
-console.log(45 > 1);
+// console.log(45 > 1);
 
-console.log(age--);
-console.log(age);
-console.log(2 ** (2 ** 3));
+// console.log(age--);
+// console.log(age);
+// console.log(2 ** (2 ** 3));
 
-let a = 0;
-console.log(a || 3 + 1);
-console.log(a && 3 + 1);
-console.log(a ?? 3 + 1);
-console.log(a?.b);
+// let a = 0;
+// console.log(a || 3 + 1);
+// console.log(a && 3 + 1);
+// console.log(a ?? 3 + 1);
+// console.log(a?.b);
 
-console.log("multiple \nstring");
-console.log(`multiple
-string`);
+// console.log("multiple \nstring");
+// console.log(`multiple
+// string`);
+
+// Type conversion & coercion
+const year = "2021";
+console.log(Number(year), year);
+
+console.log(Number("HWP"));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+console.log("I am " + 23 + " years old.");
+console.log("23" - 2);
+console.log("23" / 2);
+console.log("23" > "2");

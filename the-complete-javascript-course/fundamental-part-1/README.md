@@ -88,17 +88,17 @@ A value can be primitive or object.
 2. String => Sequence of characters, used for text, wrap with quotes
 3. Boolean => true or false, used for decisions
 4. Undefined => value from a variable which value is not yet defined
-5. Null => empty value 
+5. Null => empty value
 6. Symbol => value that is unique and cannot be changed. introduced in ES2015
 7. BigInt => larger integers that are too large to represent with Number type, introduced in ES2020
 
 JavaScript is dynamic type language. We do not need to manually define data type of the value stored in a variable.
 Data types are determined automatically. Value has type, not variable. We can reassign value with different data type to the same variable. to reassign a variable, let or const keyword is not needed.
 
-Comments 
+Comments
 JavaScript ignores comments.
 single-line comment => //
-multi-line comment => /* */
+multi-line comment => /\* \*/
 
 typeof => return a string of type name of a value
 
@@ -120,13 +120,13 @@ best practice: use const as much as you can, use let only the value of variable 
 
 operators => manipulate values to transform values or combine values
 
-arithematic operators => do mathematical operations, +, -, /, *, **, %
- 
+arithematic operators => do mathematical operations, +, -, /, \*, \*\*, %
+
 console.log() can output multiple values at the same time. console.log(value1, value2,...)
 
 \+ operator can also concatenate strings.
 
-assignment operator => =, +=, -=, /=, *=, **=, %=, let x = 1 means 1 is assign to x, not equal to.
+assignment operator => =, +=, -=, /=, \*=, \*\*=, %=, let x = 1 means 1 is assign to x, not equal to.
 
 increment operator => ++, x++, ++x, increase 1 to the value
 
@@ -174,3 +174,26 @@ if(boolean){
 }else{
 
 }
+
+## Type conversion & coercion
+
+type conversion => manually covert one type to another
+type coercion => automatically convert by JavaScript
+
+data from input fields come as a string
+
+string to number => Number(string)
+
+**Original value is not converted.**
+
+if conversion to number is failed, **NaN** is returned.
+
+not a number (NaN) means invalid number because type of NaN is still **number**.
+
+number to string => String(number)
+
+JavaScript can covert String, Number and Boolean.
+
+type coercion happens whenever operator is dealing with two values with different types. change one value to match another value in order to be executed
+
+\+ operator converts number to string when at least one operand is a string. other operators converts string to numbers.
