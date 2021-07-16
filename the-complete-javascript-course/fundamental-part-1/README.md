@@ -240,4 +240,12 @@ AND => return true only both values are true, for others return false
 
 OR => return true if one or more values are true, return false only both values are false
 
-NOT => invert value to opposite one, if true, return false, if false, return true, it has **precendence** over AND and OR   
+NOT => invert value to opposite one, if true, return false, if false, return true, it has **precendence** over AND and OR
+
+## Logical operators
+
+AND operator => &&
+OR operator => ||
+NOT operator => !
+
+AND has higher precendence than OR.
