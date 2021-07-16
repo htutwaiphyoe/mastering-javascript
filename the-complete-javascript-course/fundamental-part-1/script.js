@@ -60,16 +60,16 @@
 
 // Equality operators == vs ===
 
-console.log(1 === 1);
-console.log(1 == 1);
-console.log(1 == "1");
-console.log(1 === "1");
+// console.log(1 === 1);
+// console.log(1 == 1);
+// console.log(1 == "1");
+// console.log(1 === "1");
 
-const num = +prompt("Please enter a number");
-if (num === 1) {
-    console.log("You wins!");
-} else if (num === 2) {
-    console.log("You got this.");
-} else {
-    console.log("Sorry!");
-}
+// const num = +prompt("Please enter a number");
+// if (num === 1) {
+//     console.log("You wins!");
+// } else if (num === 2) {
+//     console.log("You got this.");
+// } else {
+//     console.log("Sorry!");
+// }

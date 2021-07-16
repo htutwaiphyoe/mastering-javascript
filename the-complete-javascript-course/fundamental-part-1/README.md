@@ -210,13 +210,14 @@ in real world, truthy and falsy values are converted implictly and they are used
 
 if block of code is only one line, curly braces can be omitted.
 
+equality operator => return true or false if value are equal.
 === => strictly equality operator, does not perform type coercion, only return true if both values are exactly the same
 
 == => loose equality operator, performs type coercion
 
 avoid using == (loose equality operator) as much as you can, if type coercion needs, convert manually and compare with === (strictly equality operator)
 
-to get a value, prompt can be used. it returns the value the use typed in. the value returned from prompt function is string. 
+to get a value from a web page, prompt can be used. it returns the value the use typed in. the value returned from prompt function is string.
 
 if there is more than one condition, else if block can be used. it can use more than one block.
 if(condition){
@@ -230,3 +231,13 @@ if(condition){
 not equality operator => return true or false if value are not equal.
 != => loose not equality operator, performs type coercion
 !== => strict not equaltiy operator, does not perform type coercion
+
+## Boolean logic
+
+boolean logic => use boolean values to solve complex logical problems, use logical operators to combine boolean values, AND, OR, NOT, it is same in all programming
+
+AND => return true only both values are true, for others return false
+
+OR => return true if one or more values are true, return false only both values are false
+
+NOT => invert value to opposite one, if true, return false, if false, return true, it has **precendence** over AND and OR   
