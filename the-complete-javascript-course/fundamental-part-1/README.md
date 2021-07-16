@@ -197,3 +197,11 @@ JavaScript can covert String, Number and Boolean.
 type coercion happens whenever operator is dealing with two values with different types. change one value to match another value in order to be executed
 
 \+ operator converts number to string when at least one operand is a string. other operators converts string to numbers.
+
+## Truthy & Falsy values
+
+Falsy value => values that are not exactly false but will become false when they are converted to boolean, 0, "" (empty string), undefined, null, NaN
+
+Truthy value => value that are not exactly true but will become true when it is converted to boolean, everything else except 5 falsy values
+
+in real world, truthy and falsy values are converted implictly and they are used in logical operators and conditional statement and checking variable is whether defined or not.

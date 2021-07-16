@@ -20,15 +20,40 @@
 // string`);
 
 // Type conversion & coercion
-const year = "2021";
-console.log(Number(year), year);
+// const year = "2021";
+// console.log(Number(year), year);
 
-console.log(Number("HWP"));
-console.log(typeof NaN);
+// console.log(Number("HWP"));
+// console.log(typeof NaN);
 
-console.log(String(23), 23);
+// console.log(String(23), 23);
 
-console.log("I am " + 23 + " years old.");
-console.log("23" - 2);
-console.log("23" / 2);
-console.log("23" > "2");
+// console.log("I am " + 23 + " years old.");
+// console.log("23" - 2);
+// console.log("23" / 2);
+// console.log("23" > "2");
+
+// Truthy & Falsy values
+
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(null));
+console.log(Boolean(undefined));
+console.log(Boolean(NaN));
+
+console.log(Boolean("HWP"));
+console.log(Boolean([]));
+
+const money = 0;
+if (money) {
+    console.log("Cool!");
+} else {
+    console.log("You should get a job.");
+}
+
+let height = 0; // can be bug
+if (height) {
+    console.log("Defined.");
+} else {
+    console.log("Undefined");
+}
