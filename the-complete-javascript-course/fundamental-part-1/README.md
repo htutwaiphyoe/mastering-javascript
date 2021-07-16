@@ -205,3 +205,28 @@ Falsy value => values that are not exactly false but will become false when they
 Truthy value => value that are not exactly true but will become true when it is converted to boolean, everything else except 5 falsy values
 
 in real world, truthy and falsy values are converted implictly and they are used in logical operators and conditional statement and checking variable is whether defined or not.
+
+## Equality operators == vs ===
+
+if block of code is only one line, curly braces can be omitted.
+
+=== => strictly equality operator, does not perform type coercion, only return true if both values are exactly the same
+
+== => loose equality operator, performs type coercion
+
+avoid using == (loose equality operator) as much as you can, if type coercion needs, convert manually and compare with === (strictly equality operator)
+
+to get a value, prompt can be used. it returns the value the use typed in. the value returned from prompt function is string. 
+
+if there is more than one condition, else if block can be used. it can use more than one block.
+if(condition){
+
+}else if(condition){
+
+}else{
+
+}
+
+not equality operator => return true or false if value are not equal.
+!= => loose not equality operator, performs type coercion
+!== => strict not equaltiy operator, does not perform type coercion

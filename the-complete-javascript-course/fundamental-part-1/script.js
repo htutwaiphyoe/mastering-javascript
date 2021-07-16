@@ -35,25 +35,41 @@
 
 // Truthy & Falsy values
 
-console.log(Boolean(0));
-console.log(Boolean(""));
-console.log(Boolean(null));
-console.log(Boolean(undefined));
-console.log(Boolean(NaN));
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean(null));
+// console.log(Boolean(undefined));
+// console.log(Boolean(NaN));
 
-console.log(Boolean("HWP"));
-console.log(Boolean([]));
+// console.log(Boolean("HWP"));
+// console.log(Boolean([]));
 
-const money = 0;
-if (money) {
-    console.log("Cool!");
+// const money = 0;
+// if (money) {
+//     console.log("Cool!");
+// } else {
+//     console.log("You should get a job.");
+// }
+
+// let height = 0; // can be bug
+// if (height) {
+//     console.log("Defined.");
+// } else {
+//     console.log("Undefined");
+// }
+
+// Equality operators == vs ===
+
+console.log(1 === 1);
+console.log(1 == 1);
+console.log(1 == "1");
+console.log(1 === "1");
+
+const num = +prompt("Please enter a number");
+if (num === 1) {
+    console.log("You wins!");
+} else if (num === 2) {
+    console.log("You got this.");
 } else {
-    console.log("You should get a job.");
-}
-
-let height = 0; // can be bug
-if (height) {
-    console.log("Defined.");
-} else {
-    console.log("Undefined");
+    console.log("Sorry!");
 }
