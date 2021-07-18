@@ -278,6 +278,42 @@ JavaScript expects statements and expressions in different places. It means in t
 
 ternary operator => similar to if/else statement but all in one line
 
-condition ? if true : else 
+condition ? if true : else
 
 it produces a value.
+
+## JavaScript Releases
+
+### History of JavaScript
+
+1995 => Netscape Navigator (web browser) hired Brendan Eich to create very first version of JavaScript in just 10 days. it is called "Mocha"
+
+1996 => Mocha renamed to LiveScript and then renamed to JavaScript, to attract developers because Java is hottest language at that time. It is just for marking reason because JavaScript and Java are two completely languages.
+Microsof launches IE (internet explore) by copying JavaScript and calling it JScript.
+
+1997 => JavaScript was submitted to independent standard organization call ECMA and released ECMAScript One or ES1 which was very first official standard.
+
+ECMAScript => standard
+JavaScript => language
+
+2009 => ES5 was released with lots of great features.
+
+2015 => ES6 was released which was biggest update to the language ever. After this, ECMA changes to an annual release cycle to avoid huge version, ES7, ES6, ES7...
+
+Backwards compatibility => Modern JavaScript Engine can work old javascript code pretty well
+
+DON'T BREAK THE WEB PRINCIPLE => old features are never removed, incremental updates instead of new version, so there is a lot of old bugs and weird quirks which leads bad reputation. for that use modern javascript as much as you can.
+
+Forwards compatibility => future code can work in today browser. JavaScript is not forwards compatible.
+
+### How to use Modern JavaScript
+
+Development => building website on computer, use lastest version of Google Chrome
+
+Production => deploy website on server, depends on users' browsers, convert modern JavaScript to ES5 by transpiling and polyfilling. use Babel
+
+ES5 => fully support in all browsers, ready and safe to be used
+
+Start from ES6 (Modern JavaScript) => well support in all modern browsers, no support in older browsers, so use polyfilling and transpiling 
+
+ESNext (future version) => new features proposals that reach stage 4, most browsers start implementing new featurs before they enter the official ECMAScript specification. if new features are proposed, they have to go through four stages. if a feature is in stage three, it will eventually pass to stage 4. browsers start implementing that features while in stage 3.
