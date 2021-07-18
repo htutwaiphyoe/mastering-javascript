@@ -260,7 +260,16 @@ switch (value) {
     case comparedValue: // case can be multiple, it works like logical OR
         block;
         break; // break needs to stop comparing, without it the code will continue executing
-    default: // default will run if all cases fail
+    default:
+        // default will run if all cases fail
         block;
 }
 ```
+
+## Statement & Expression
+
+Expression => a piece code that produces a value, like a word
+
+Statement => a bigger piece of code that does not produce a value on itself, performs actions, like a complete sentence
+
+JavaScript expects statements and expressions in different places. It means in template literals, it expects expressions, not statement.
