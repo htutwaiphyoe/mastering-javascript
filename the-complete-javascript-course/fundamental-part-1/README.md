@@ -273,3 +273,11 @@ Expression => a piece code that produces a value, like a word
 Statement => a bigger piece of code that does not produce a value on itself, performs actions, like a complete sentence
 
 JavaScript expects statements and expressions in different places. It means in template literals, it expects expressions, not statement.
+
+## Ternary Operator
+
+ternary operator => similar to if/else statement but all in one line
+
+condition ? if true : else 
+
+it produces a value.

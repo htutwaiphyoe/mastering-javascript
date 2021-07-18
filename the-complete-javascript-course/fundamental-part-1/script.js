@@ -120,14 +120,24 @@
 // }
 
 // Statements and Expressions
-2 + 1;
-("Mg Mg");
-true && false;
+// 2 + 1;
+// ("Mg Mg");
+// true && false;
 
-let number = 1;
-if (number > 1) {
-    console.log("Ok");
-}
+// let number = 1;
+// if (number > 1) {
+//     console.log("Ok");
+// }
 
-console.log(`${number}`);
+// console.log(`${number}`);
 // console.log(`${let a = 1}`); // error
+
+// Ternary Operator
+
+const age = 21;
+
+let a = age >= 18 ? 1 : 2;
+
+console.log(a);
+
+console.log(`Your drink is ${age >= 18 ? "Wine" : "Water"}`);
