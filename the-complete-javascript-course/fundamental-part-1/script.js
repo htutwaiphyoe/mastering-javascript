@@ -76,7 +76,45 @@
 
 // Logical operators
 
-console.log(true && false);
-console.log(true || false);
-console.log(true && !false);
-console.log((true && !false) || false || false);
+// console.log(true && false);
+// console.log(true || false);
+// console.log(true && !false);
+// console.log((true && !false) || false || false);
+
+// Switch statement
+const day = "monday";
+switch (day) {
+    case "monday":
+        console.log("Code 1");
+        break;
+    case "tuesday": // case can be multiple
+        console.log("Code 2");
+        break; // break needs to stop comparing
+    case "wednesday":
+    case "thursday":
+        console.log("Project");
+        break;
+    case "friday":
+        console.log("blog");
+        break;
+    case "saturday":
+    case "sunday":
+        console.log("weekend");
+        break;
+    default:
+        console.log("Invalid day");
+}
+
+if (day === "monday") {
+    console.log("Code 1");
+} else if (day === "tuesday") {
+    console.log("Code 2");
+} else if (day === "wednesday" || day === "thursday") {
+    console.log("Project");
+} else if (day === "friday") {
+    console.log("blog");
+} else if (day === "saturday" || day === "sunday") {
+    console.log("weekend");
+} else {
+    console.log("Invalid day");
+}

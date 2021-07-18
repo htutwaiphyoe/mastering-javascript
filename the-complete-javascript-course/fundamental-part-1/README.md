@@ -249,3 +249,18 @@ OR operator => ||
 NOT operator => !
 
 AND has higher precendence than OR.
+
+## Switch Statement
+
+switch => alternative way of writing complicated if/else statement, use to compare one value to multiple different options
+
+```js
+switch (value) {
+    case comparedValue: // strict equality way
+    case comparedValue: // case can be multiple, it works like logical OR
+        block;
+        break; // break needs to stop comparing, without it the code will continue executing
+    default: // default will run if all cases fail
+        block;
+}
+```
